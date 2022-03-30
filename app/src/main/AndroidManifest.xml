@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zerexp">
         <activity
+            android:name=".RegEmpresaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".registrarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
