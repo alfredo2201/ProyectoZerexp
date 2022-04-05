@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Perfil"/>
-    <item android:title="Mensajes"/>
-    <item android:title="Buscar empleos"/>
-    <item android:title="Nuevas vacantes"/>
-    <item android:title="Empresas destacadas"/>
-    <item android:title="Guardados / Favoritos"/>
-    <item android:title="Preguntas frecuentes"/>
-    <item android:title="Cerrar sesion"/>
+    <item android:title="Perfil"
+        android:icon="@tools:sample/avatars"/>
+    <item android:title="Mensajes"
+        android:icon="@tools:sample/avatars"/>
+    <item android:title="Buscar empleos"
+        android:icon="@tools:sample/avatars"/>
+    <item android:title="Nuevas vacantes"
+        android:icon="@tools:sample/avatars"/>
+    <item android:title="Empresas destacadas"
+        android:icon="@tools:sample/avatars"/>
+    <item android:title="Guardados / Favoritos"
+        android:icon="@tools:sample/avatars"/>
+    <item android:title="Preguntas frecuentes"
+        android:icon="@tools:sample/avatars"/>
+    <item android:title="Cerrar sesion"
+        android:icon="@tools:sample/avatars"/>
 
 </menu>
