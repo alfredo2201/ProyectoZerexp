@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    tools:context=".nuevas_vacantes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_back_pf"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="<"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevas Vacantes"
+            android:textSize="16sp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+        <Button
+            android:id="@+id/burger"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="-"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/et_buscar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Buscar..."/>
+
+        <Button
+            android:id="@+id/btn_buscar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text=">"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+
+            <ListView
+                android:id="@+id/lv_vacantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
