@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zerexp">
         <activity
+            android:name=".empresas_destacadas"
+            android:exported="false" />
+        <activity
+            android:name=".favoritos"
+            android:exported="false" />
+        <activity
             android:name=".MessagesActivity"
             android:exported="false" />
         <activity
