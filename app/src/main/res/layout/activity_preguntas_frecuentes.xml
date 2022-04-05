@@ -37,7 +37,7 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
-            android:text="-"/>
+            android:background="@drawable/ic_baseline_menu_24"/>
 
 
     </LinearLayout>
