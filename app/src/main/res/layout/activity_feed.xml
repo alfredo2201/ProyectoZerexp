@@ -69,6 +69,15 @@
             android:paddingBottom="5dp"
             />
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            
+
+        </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,8 +99,6 @@
             android:paddingBottom="5dp"
             android:paddingHorizontal="50dp"
             />
-
-
 
     </LinearLayout>
 
