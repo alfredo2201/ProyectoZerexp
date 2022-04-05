@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Perfil"/>
+    <item android:title="Mensajes"/>
+    <item android:title="Buscar empleos"/>
+    <item android:title="Nuevas vacantes"/>
+    <item android:title="Empresas destacadas"/>
+    <item android:title="Guardados / Favoritos"/>
+    <item android:title="Preguntas frecuentes"/>
+    <item android:title="Cerrar sesion"/>
+
+</menu>
