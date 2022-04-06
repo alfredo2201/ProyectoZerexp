@@ -3,23 +3,20 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_reg_empresa.*
-import kotlinx.android.synthetic.main.activity_reg_empresa.btn_regresar
-import kotlinx.android.synthetic.main.activity_registrar.*
+import kotlinx.android.synthetic.main.activity_crear_cv1.*
+import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_login.btn_continuar
 
-class RegEmpresaActivity : AppCompatActivity() {
+class CrearCV1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reg_empresa)
-
+        setContentView(R.layout.activity_crear_cv1)
         btn_continuar.setOnClickListener {
-            var intent = Intent(this,FeedActivity::class.java)
+            var intent = Intent(this, CrearCV2Activity::class.java)
             startActivity(intent)
         }
-
         btn_regresar.setOnClickListener {
             onBackPressed()
         }
-
     }
 }

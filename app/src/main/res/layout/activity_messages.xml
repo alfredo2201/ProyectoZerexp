@@ -63,7 +63,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:contentDescription="TODO"
-                android:src="@tools:sample/avatars" />
+                 />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -113,7 +113,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:contentDescription="TODO"
-                android:src="@tools:sample/avatars" />
+                />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -163,7 +163,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:contentDescription="TODO"
-                android:src="@tools:sample/avatars" />
+                />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -213,7 +213,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:contentDescription="TODO"
-                android:src="@tools:sample/avatars" />
+                 />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -263,7 +263,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:contentDescription="TODO"
-                android:src="@tools:sample/avatars" />
+                />
 
             <LinearLayout
                 android:orientation="vertical"
@@ -313,7 +313,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:contentDescription="TODO"
-                android:src="@tools:sample/avatars" />
+                />
 
             <LinearLayout
                 android:orientation="vertical"

@@ -15,7 +15,7 @@
         <ImageView
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:src="@tools:sample/avatars"
+
             android:layout_gravity="center"
             android:contentDescription="TODO" />
 
@@ -79,19 +79,19 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:src="@tools:sample/avatars"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
                 android:layout_gravity="center"
                 android:contentDescription="TODO"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Usuario"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:textAlignment="center"/>
+                android:text="Usuario"
+                android:textAlignment="center"
+                android:textColor="#455A64" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -130,7 +130,7 @@
             <ImageView
                 android:layout_height="30dp"
                 android:layout_width="30dp"
-                android:src="@tools:sample/avatars"
+
                 android:contentDescription="TODO" />
 
             <TextView
@@ -150,7 +150,7 @@
             <ImageView
                 android:layout_height="30dp"
                 android:layout_width="30dp"
-                android:src="@tools:sample/avatars"
+
                 android:contentDescription="TODO" />
 
             <TextView
@@ -170,7 +170,6 @@
             <ImageView
                 android:layout_height="30dp"
                 android:layout_width="30dp"
-                android:src="@tools:sample/avatars"
                 android:contentDescription="TODO" />
 
             <TextView
@@ -194,9 +193,8 @@
         android:paddingBottom="10dp"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@tools:sample/avatars"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"/>
 
     <LinearLayout
@@ -207,9 +205,10 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
             android:layout_gravity="start|center_vertical"
-            android:hint="Escribir mensaje..."/>
+            android:layout_weight="3"
+            android:hint="Escribir mensaje..."
+            android:minHeight="48dp" />
 
         <Button
             android:layout_width="wrap_content"

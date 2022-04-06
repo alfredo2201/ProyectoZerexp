@@ -3,17 +3,12 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_feed.*
+import kotlinx.android.synthetic.main.activity_crear_cv2.*
 
-class FeedActivity : AppCompatActivity() {
+class CrearCV2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_feed)
-
-        btn_crear_curriculum.setOnClickListener {
-            var intent = Intent(this,CrearCV1Activity::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_crear_cv2)
 
         btn_regresar.setOnClickListener {
             onBackPressed()

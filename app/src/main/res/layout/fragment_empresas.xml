@@ -15,14 +15,15 @@
 
         <Button
             android:id="@+id/btn_back_pf"
-            android:layout_width="40dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="<"/>
+            android:text="r" />
 
 
 
         <TextView
+            android:id="@+id/txt_mensaje_empresas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mensajes\nEmpresas"
@@ -34,10 +35,10 @@
 
         <Button
             android:id="@+id/burger"
-            android:layout_width="40dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="130dp"
-            android:text="-"/>
+            android:text="s" />
 
 
     </LinearLayout>
@@ -63,10 +64,10 @@
 
     <Button
         android:id="@+id/btn_add"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:text="+"
-        android:layout_gravity="center|bottom"/>
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|bottom"
+        android:text="m" />
 
 
 </LinearLayout>

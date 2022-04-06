@@ -15,10 +15,10 @@
 
         <Button
             android:id="@+id/btn_back_pf"
-            android:layout_width="40dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="<"/>
+            android:text="r" />
 
 
 
@@ -34,10 +34,11 @@
 
         <Button
             android:id="@+id/burger"
-            android:layout_width="40dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
-            android:background="@drawable/ic_baseline_menu_24"/>
+            android:background="@drawable/ic_baseline_menu_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
@@ -54,17 +55,22 @@
             android:id="@+id/et_buscar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:hint="Buscar..."/>
+            android:hint="Buscar..."
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/btn_buscar"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:text=">"/>
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:text="b"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
 
-
+    <!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,13 +79,6 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="500dp">
-
-
-<!--            <ListView-->
-<!--                android:id="@+id/lv_vacantes"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"/>-->
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,12 +120,13 @@
         </ScrollView>
 
     </LinearLayout>
+    -->
     <Button
         android:id="@+id/btn_add"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:text="+"
-        android:layout_gravity="center"/>
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:text="m" />
 
 
 </LinearLayout>

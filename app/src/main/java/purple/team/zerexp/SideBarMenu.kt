@@ -6,6 +6,7 @@ import android.view.MenuItem
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBar
 import androidx.core.view.GravityCompat
+import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.activity_side_bar_menu.*
 
 class SideBarMenu : AppCompatActivity() {

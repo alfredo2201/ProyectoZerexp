@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zerexp">
         <activity
+            android:name=".CrearCV2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearCV1Activity"
+            android:exported="false" />
+        <activity
             android:name=".chat"
             android:exported="false" />
         <activity

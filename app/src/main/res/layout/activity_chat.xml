@@ -14,10 +14,10 @@
 
         <Button
             android:id="@+id/btn_back_pf"
-            android:layout_width="40dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:text="<"/>
+            android:text="Ic" />
 
 
 
@@ -33,10 +33,11 @@
 
         <Button
             android:id="@+id/burger"
-            android:layout_width="40dp"
+            android:layout_width="48dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="130dp"
-            android:background="@drawable/ic_baseline_menu_24"/>
+            android:background="@drawable/ic_baseline_menu_24"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
@@ -145,7 +146,7 @@
 
         <EditText
             android:layout_width="250dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:hint="Aa..."
             android:textSize="11sp"/>
 
