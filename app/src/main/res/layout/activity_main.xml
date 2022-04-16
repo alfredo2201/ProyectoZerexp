@@ -5,27 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/dark_blue"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:text="BIENVENIDO"
-        android:textSize="20sp"
+        android:fontFamily="@font/insanibc_1"
+        android:text="@string/bienvenido"
+        android:textColor="@color/white"
+        android:textSize="25sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         />
+
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="200dp"
-        tools:srcCompat="@tools:sample/avatars"
-        />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo_blanco" />
+
 
     <ProgressBar
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="75dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/rotate_progress_bar"
+        />
 </LinearLayout>

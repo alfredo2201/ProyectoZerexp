@@ -4,4 +4,20 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="bienvenido">BIENVENIDO</string>
+    <string name="todo">TODO</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="omitir">Omitir</string>
+    <string name="usuario">Usuario</string>
+    <string name="texto_usuario_registrarse">Encuentra el empleo o las prácticas adecuadas\npara ti</string>
+    <string name="texto_empresa_registrarse">Publica tu anuncio de empleo para que lo \nvean millones de personas</string>
+    <string name="bienvenida_registro">Bienvenido a tu comunidad profesional,\n¿Como deseas registrarte?</string>
+    <string name="nombre_usuario">Nombre de usuario...</string>
+    <string name="email">Correo Electrónico...</string>
+    <string name="password">Contraseña...</string>
+    <string name="repeat_password">Repetir Contraseña...</string>
+    <string name="location">Ubicación...</string>
+    <string name="profession">Profesión...</string>
+    <string name="username">Nombre de usuario o empresa...</string>
+    <string name="politica_aceptacion">Al hacer clic en Continuar, aceptas las Condiciones de uso, la Pólitica de privacidad y la Pólitica de cookies de Zerexp</string>
 </resources>

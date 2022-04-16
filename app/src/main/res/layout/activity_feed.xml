@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".FeedActivity">
 
     <LinearLayout
@@ -22,6 +23,7 @@
                 android:layout_height="48dp"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="5dp"
+                android:background="@drawable/round_button"
                 android:text="i" />
 
             <SearchView
@@ -45,22 +47,24 @@
             android:text="FEED DE INICIO"
             android:textAlignment="center"
             android:textSize="25sp"
+            android:textColor="@color/dark_blue"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingHorizontal="50dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:text="Encuentra el empleo o las practicas adecuadas para ti o publica tu anuncio de empleo para que lo vean millones de personas."
             android:textAlignment="center"
+            android:textColor="@color/dark_blue"
             android:textSize="13sp" />
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp">
+            android:layout_gravity="center_horizontal">
 
             <Button
                 android:id="@+id/btn_crear_curriculum"
@@ -68,12 +72,17 @@
                 android:layout_height="60dp"
                 android:text="Crear\nCurriculim Vitae"
                 android:textSize="9sp"
-                android:layout_marginHorizontal="40dp"/>
+                android:background="@drawable/round_button_feed"
+                android:textColor="@color/white"
+                android:layout_marginRight="50dp"
+                />
             <Button
                 android:id="@+id/btn_publicar_empleo"
                 android:layout_width="135dp"
                 android:layout_height="60dp"
                 android:text="Publicar\nEmpleo"
+                android:background="@drawable/round_button_feed"
+                android:textColor="@color/white"
                 android:textSize="9sp"/>
         </LinearLayout>
 
@@ -85,12 +94,15 @@
             android:text="BUSQUEDAS SUGERIDAS"
             android:textAlignment="center"
             android:textSize="15sp"
+            android:textColor="@color/dark_blue"
             android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
+            <!--Cambiar a Grid view-->
 
             <ListView
                 android:id="@+id/lv_sugeridas"
@@ -123,6 +135,7 @@
             android:text="NUEVOS USUARIOS Y EMPRESAS"
             android:textAlignment="center"
             android:textSize="15sp"
+            android:textColor="@color/dark_blue"
             android:textStyle="bold" />
 
         <TextView
@@ -133,6 +146,7 @@
             android:paddingBottom="5dp"
             android:text="Conecta con personas que te pueden ayudar, y encuentra el trabajo ideal para ti"
             android:textAlignment="center"
+            android:textColor="@color/dark_blue"
             android:textSize="15sp" />
 
         <LinearLayout

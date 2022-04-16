@@ -5,86 +5,126 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/dark_blue"
     tools:context=".LoginActivity">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="100dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginVertical="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_blanco"
         />
     <TextView
         android:id="@+id/txtLogin"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="INICAR SESIÓN"
-        android:textSize="20dp"
+        android:textSize="23dp"
         android:gravity="center"
-        android:fontFamily="sans-serif"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="25dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/insanibc_1"
         />
     <EditText
         android:id="@+id/et_nombre_usuario"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Nombre de usuario o empresa..."/>
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/username"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:background="@drawable/round_edit_text"
+        android:textColor="@color/dark_blue"
+        />
 
     <EditText
         android:id="@+id/et_contraseña"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:ems="10"
-        android:hint="Contraseña"
+        android:hint="@string/password"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:layout_marginHorizontal="60dp"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:background="@drawable/round_edit_text"
+        android:textColor="@color/dark_blue"
+        />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        >
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/segoe_ui_symbol"
             android:text="Continuar"
-            android:layout_marginRight="15dp"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
 
         <Button
             android:id="@+id/btn_continuar"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:text="i" />
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_button"
+            />
     </LinearLayout>
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:paddingHorizontal="70dp"
-
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
         >
 
         <Button
             android:id="@+id/btn_registrase"
-            android:layout_width="120dp"
-            android:layout_height="48dp"
-            android:layout_marginRight="10dp"
-            android:text="Registrarse"
-            android:textSize="10dp" />
+            android:layout_width="122dp"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_button"
+            android:text="@string/registrarse"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/segoe_ui_symbol"/>
 
         <Button
             android:id="@+id/btn_omitir"
             android:layout_width="120dp"
-            android:layout_height="48dp"
-            android:text="Omitir"
-            android:textSize="10dp" />
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/round_button"
+            android:text="@string/omitir"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:fontFamily="@font/segoe_ui_symbol"
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Olvide mi contraseña" />
+        android:layout_gravity="center_horizontal"
+        android:text="Olvide mi contraseña"
+        android:layout_marginVertical="5dp"
+        android:textSize="13sp"
+        android:textColor="@color/celeste"/>
 
 
 </LinearLayout>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/dark_blue"
     tools:context=".RegEmpresaActivity">
 
     <Button
@@ -13,79 +14,132 @@
         android:layout_height="48dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginVertical="5dp"
-        android:text="r" />
+        android:background="@drawable/round_button"
+        />
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="100dp"
-        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_blanco"
         />
     <TextView
         android:id="@+id/txt_registrarse"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="REGISTRARSE"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:fontFamily="sans-serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registrarse"
+        android:textAllCaps="true"
+        android:textSize="27sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/insanibc_1"
+        android:textColor="@color/white"
         />
     <EditText
         android:id="@+id/et_reg_nombre_usuario"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Nombre de la empresa..."/>
+        android:layout_height="35dp"
+        android:hint="Nombre de la empresa..."
+        android:background="@drawable/round_edit_text"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="18dp"
+        android:textColor="@color/dark_blue"/>
     <EditText
         android:id="@+id/et_reg_email"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Correo Electrónico..."/>
+        android:layout_height="35dp"
+        android:hint="Correo Electrónico..."
+        android:background="@drawable/round_edit_text"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/dark_blue"/>
     <EditText
         android:id="@+id/et_reg_password"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Contraseña..."/>
+        android:layout_height="35dp"
+        android:hint="Contraseña..."
+        android:background="@drawable/round_edit_text"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/dark_blue"
+        />
     <EditText
         android:id="@+id/et_reg_repeat_password"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Contraseña..."/>
+        android:layout_height="35dp"
+        android:hint="Contraseña..."
+        android:background="@drawable/round_edit_text"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/dark_blue"
+        />
     <EditText
         android:id="@+id/et_reg_location"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Ubicación..."/>
+        android:layout_height="35dp"
+        android:hint="Ubicación..."
+        android:background="@drawable/round_edit_text"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/dark_blue"
+        />
     <EditText
         android:id="@+id/et_reg_profession"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Giro de la empresa..."/>
+        android:layout_height="35dp"
+        android:hint="Giro de la empresa..."
+        android:background="@drawable/round_edit_text"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/dark_blue"
+        />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        >
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/segoe_ui_symbol"
             android:text="Continuar"
-            android:layout_marginRight="15dp"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            />
 
         <Button
             android:id="@+id/btn_continuar"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:text="c" />
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_button"
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <TextView
         android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Al hacer clic en Continuar, aceptas las Condiciones de uso, la Pólitica de privacidad y la Pólitica de cookies de Zerexp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/politica_aceptacion"
         android:textAlignment="center"
-        android:textSize="10dp" />
+        android:textColor="@color/white"
+        android:textSize="10sp" />
 </LinearLayout>
