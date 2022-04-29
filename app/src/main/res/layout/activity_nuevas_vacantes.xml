@@ -32,13 +32,13 @@
             android:layout_gravity="center"/>
 
 
-        <Button
-            android:id="@+id/burger"
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
             android:layout_width="48dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginLeft="70dp"
             android:background="@drawable/ic_baseline_menu_24"
-            tools:ignore="SpeakableTextPresentCheck" />
+            />
 
 
     </LinearLayout>
