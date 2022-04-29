@@ -3,37 +3,47 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/background_round.xml" value="0.224" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/button_next.xml" value="0.1935" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/progress_bar_round.xml" value="0.3635" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/rotate_progress_bar.xml" value="0.22" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_button.xml" value="0.3635" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_button_feed.xml" value="0.224" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_edit_text.xml" value="0.3635" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/side_nav_bar.xml" value="0.3635" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_chat.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_company_profile.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv1.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv2.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_empleos.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_empresas_destacadas.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_favoritos.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_feed.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_login.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_mensajes.xml" value="0.33" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_messages.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_nuevas_vacantes.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_preguntas_frecuentes.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_empresa.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_usuario.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_registrar.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_side_bar_menu.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_user_profile.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/fragment_empresas.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/fragment_mensajes.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/fragment_usuarios.xml" value="0.3625" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/menu/side_menu.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_baseline_business_24.xml" value="0.1955" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1955" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/messages_menu_layout_round_borders.xml" value="0.154" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/round_button.xml" value="0.1955" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/round_button_feed.xml" value="0.1955" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/round_edit_text.xml" value="0.1955" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable/side_nav_bar.xml" value="0.1385" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_company_profile.xml" value="0.264" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_crear_cv1.xml" value="0.25407608695652173" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_empleos.xml" value="0.4" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_feed.xml" value="0.264" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_login.xml" value="0.4" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_mensajes.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_messages.xml" value="0.264" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_nuevas_vacantes.xml" value="0.4" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_preguntas_frecuentes.xml" value="0.1" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_reg_empresa.xml" value="0.2572463768115942" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_reg_usuario.xml" value="0.4" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_side_bar_menu.xml" value="0.1" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_user_profile.xml" value="0.264" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/app_bar_side_bar_menu.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/content_side_bar_menu.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/fragment_home.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/fragment_mensajes.xml" value="0.2" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/fragment_slideshow.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/nav_header_side_bar_menu.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/side_menu.xml" value="0.19947916666666668" />
       </map>
     </option>
   </component>

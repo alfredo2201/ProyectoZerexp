@@ -46,6 +46,7 @@
             android:paddingBottom="5dp"
             android:text="FEED DE INICIO"
             android:textAlignment="center"
+            android:fontFamily="@font/insanibu"
             android:textSize="25sp"
             android:textColor="@color/dark_blue"
             android:textStyle="bold" />
@@ -57,6 +58,7 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:text="Encuentra el empleo o las practicas adecuadas para ti o publica tu anuncio de empleo para que lo vean millones de personas."
+            android:fontFamily="@font/segoe_ui_symbol"
             android:textAlignment="center"
             android:textColor="@color/dark_blue"
             android:textSize="13sp" />
@@ -92,6 +94,7 @@
             android:paddingTop="50dp"
             android:paddingBottom="5dp"
             android:text="BUSQUEDAS SUGERIDAS"
+            android:fontFamily="@font/insanibu"
             android:textAlignment="center"
             android:textSize="15sp"
             android:textColor="@color/dark_blue"
@@ -134,6 +137,7 @@
             android:paddingBottom="5dp"
             android:text="NUEVOS USUARIOS Y EMPRESAS"
             android:textAlignment="center"
+            android:fontFamily="@font/insanibu"
             android:textSize="15sp"
             android:textColor="@color/dark_blue"
             android:textStyle="bold" />
@@ -145,6 +149,7 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:text="Conecta con personas que te pueden ayudar, y encuentra el trabajo ideal para ti"
+            android:fontFamily="@font/segoe_ui_symbol"
             android:textAlignment="center"
             android:textColor="@color/dark_blue"
             android:textSize="15sp" />
