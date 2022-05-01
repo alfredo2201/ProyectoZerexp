@@ -23,8 +23,8 @@
                 android:layout_height="48dp"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="5dp"
-                android:background="@drawable/round_button"
-                android:text="i" />
+                android:background="@color/white"
+                android:drawableEnd="@drawable/boton_regresar"/>
 
             <SearchView
                 android:layout_width="302dp"
