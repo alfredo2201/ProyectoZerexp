@@ -2,20 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Perfil"
+        android:icon="@drawable/usuario"
         />
     <item android:title="Mensajes"
+        android:icon="@drawable/icono_mensaje_blanco"
         />
     <item android:title="Buscar empleos"
+        android:icon="@drawable/ic_baseline_work_24"
         />
     <item android:title="Nuevas vacantes"
-        />
+        android:icon="@drawable/icono_nuevavac_blanco"/>
     <item android:title="Empresas destacadas"
         />
     <item android:title="Guardados / Favoritos"
+        android:icon="@drawable/icono_fav_blanco"
         />
     <item android:title="Preguntas frecuentes"
+        android:icon="@drawable/icono_preg_blanco"
         />
     <item android:title="Cerrar sesion"
+        android:icon="@drawable/icono_cerrar_blanco"
         />
 
 </menu>

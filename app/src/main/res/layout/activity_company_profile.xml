@@ -62,7 +62,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_favorite_24"
+                        android:src="@drawable/icono_fav_azul"
                         android:layout_gravity="center"/>
                     <TextView
                         android:layout_width="match_parent"
@@ -98,7 +98,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_baseline_work_24"
+                        android:src="@drawable/icono_empleo_azul"
                         android:layout_gravity="center"/>
                     <TextView
                         android:layout_width="match_parent"
@@ -198,7 +198,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/ic_baseline_email_24"
+                    android:src="@drawable/icono_mensaje_azul"
                     android:contentDescription="TODO"
                      />
 
