@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Perfil"
-        android:icon="@drawable/usuario"
-        />
+        android:icon="@drawable/usuario"/>
+
     <item android:title="Mensajes"
         android:icon="@drawable/icono_mensaje_blanco"
         />
@@ -12,8 +12,10 @@
         />
     <item android:title="Nuevas vacantes"
         android:icon="@drawable/icono_nuevavac_blanco"/>
+
     <item android:title="Empresas destacadas"
-        />
+        android:icon="@drawable/icono_empdest_blanco"/>
+
     <item android:title="Guardados / Favoritos"
         android:icon="@drawable/icono_fav_blanco"
         />

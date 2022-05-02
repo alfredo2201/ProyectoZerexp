@@ -14,12 +14,9 @@ class SideBarMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_side_bar_menu)
 
-        toolbar("Menu Lateral")
-
     }
 
     fun toolbar(title: String) {
-        setSupportActionBar(tb_side_bar)
 
         var ab: ActionBar? = supportActionBar
 
@@ -34,7 +31,7 @@ class SideBarMenu : AppCompatActivity() {
 
         when (item.itemId) {
             android.R.id.home -> {
-                dwl_side_bar.openDrawer(GravityCompat.START)
+                dwl_side_bar.openDrawer(GravityCompat.END)
             }
         }
 

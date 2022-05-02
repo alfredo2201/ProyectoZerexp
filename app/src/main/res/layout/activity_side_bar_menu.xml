@@ -6,26 +6,32 @@
     android:layout_height="match_parent"
     android:id="@+id/dwl_side_bar"
     android:fitsSystemWindows="true">
-
-    <LinearLayout
+    <!--
+    <androidx.fragment.app.FragmentContainerView
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:id="@+id/nav_host_fragment_side"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/tb_side_bar"
-            android:layout_width="match_parent"
-            android:background="@color/light_gray"
-            android:layout_height="?actionBarSize"
-            android:theme="@style/ThemeOverlay.AppCompat.Light">
-        </androidx.appcompat.widget.Toolbar>
-
-    </LinearLayout>
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph_side" />
+        -->
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        app:menu="@menu/side_menu">
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:menu="@menu/side_menu"
+        android:background="@drawable/round_nav_side"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white">
+
+        <ImageView
+            android:layout_marginTop="500dp"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_blanco"/>
 
     </com.google.android.material.navigation.NavigationView>
 

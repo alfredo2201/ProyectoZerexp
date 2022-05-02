@@ -15,8 +15,8 @@ class FeedActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btn_regresar.setOnClickListener {
-            onBackPressed()
-        }
+        //btn_regresar.setOnClickListener {
+        //    onBackPressed()
+        //}
     }
 }
