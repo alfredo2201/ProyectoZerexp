@@ -27,16 +27,13 @@
         android:contentDescription="@string/todo"
         android:src="@drawable/logo_blanco" />
 
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="75dp"
-        android:layout_height="79dp"
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_bar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="160dp"
-        android:max="100"
-        android:progress="0"
-        android:progressDrawable="@drawable/rotate_progress_bar"
-        />
+        app:SpinKit_Color="@color/white" />
+
 </LinearLayout>

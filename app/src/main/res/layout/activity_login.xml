@@ -79,7 +79,9 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginRight="40dp"
-            android:background="@drawable/round_button"
+            android:background="@color/dark_blue"
+            android:layout_gravity="center_horizontal"
+            android:drawableEnd="@drawable/boton_next"
             />
     </LinearLayout>
 

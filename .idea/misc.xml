@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_chat.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_company_profile.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv1.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv2.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_favoritos.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_feed.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_login.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_mensajes.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_messages.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_empresa.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_usuario.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_registrar.xml" value="0.3625" />

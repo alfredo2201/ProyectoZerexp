@@ -18,7 +18,8 @@
             android:layout_height="48dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="5dp"
-            android:background="@drawable/round_button" />
+            android:background="@color/white"
+            android:drawableEnd="@drawable/boton_regresar"/>
 
         <SearchView
             android:layout_width="302dp"
@@ -171,7 +172,8 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/round_button" />
+                    android:background="@color/dark_blue"
+                    android:drawableEnd="@drawable/boton_next"/>
             </LinearLayout>
 
         </LinearLayout>

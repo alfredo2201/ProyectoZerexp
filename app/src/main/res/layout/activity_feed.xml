@@ -17,28 +17,25 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/logo_azul"
-                android:contentDescription="TODO"
-                />
+            <Button
+                android:id="@+id/btn_regresar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/boton_regresar"/>
 
             <SearchView
                 android:layout_width="302dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center" />
 
-            <!--
             <com.google.android.material.navigation.NavigationView
-                android:id="@+id/nv_feed"
+                android:id="@+id/navigation_view"
                 android:layout_width="58dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="start"
-                android:background="@drawable/ic_baseline_menu_24"
-                />
-             -->
+                android:layout_gravity="start" />
 
         </LinearLayout>
 
@@ -110,8 +107,8 @@
 
             <!--Cambiar a Grid view-->
 
-            <GridView
-                android:id="@+id/gv_sugeridas"
+            <ListView
+                android:id="@+id/lv_sugeridas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -170,8 +167,7 @@
 
                 <ImageView
                     android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    />
+                    android:layout_height="60dp"                     />
 
                 <TextView
                     android:layout_width="wrap_content"
