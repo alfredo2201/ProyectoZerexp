@@ -38,6 +38,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="110dp"
             android:background="@drawable/ic_baseline_menu_24"
+            android:backgroundTint="@color/dark_blue"
             />
 
 
