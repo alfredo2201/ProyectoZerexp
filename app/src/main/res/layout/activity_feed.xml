@@ -172,7 +172,7 @@
             android:textColor="@color/dark_blue"
             android:textSize="15sp" />
 
-        
+
         <HorizontalScrollView
             android:id="@+id/lista_nuevos_usuarios"
             android:layout_marginTop="20dp"
