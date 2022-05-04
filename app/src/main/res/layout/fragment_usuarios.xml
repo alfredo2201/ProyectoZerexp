@@ -11,64 +11,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_back_pf"
-            android:layout_width="48dp"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="15dp"
-            android:text="r" />
-
+            android:background="@color/white"
+            android:src="@drawable/boton_regresar"/>
 
 
         <TextView
-            android:id="@+id/txt_mensajes_usuarios"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mensajes\nUsuarios"
-            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="Chats"
+            android:textSize="20sp"
             android:layout_marginLeft="100dp"
             android:gravity="center"
+            android:fontFamily="@font/insanibc_1"
+            android:textColor="@color/dark_blue"
             android:layout_gravity="center"/>
 
 
-        <Button
-            android:id="@+id/burger"
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigation_view"
             android:layout_width="48dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:text="s" />
-
-
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/ic_baseline_menu_24"
+            android:backgroundTint="@color/dark_blue" />
     </LinearLayout>
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-
         <ListView
             android:id="@+id/lv_mensajes"
             android:layout_width="match_parent"
             android:layout_height="600dp"/>
-
-
-
-
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center|bottom"
-        android:text="m" />
-
 
 
 

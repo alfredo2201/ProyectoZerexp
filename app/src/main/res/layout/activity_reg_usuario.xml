@@ -8,15 +8,15 @@
     android:background="@color/dark_blue"
     tools:context=".RegUsuarioActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_regresar"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="5dp"
-        android:background="@color/dark_blue"
-        android:drawableEnd="@drawable/boton_regresar"
-        />
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/boton_regresar"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     <ImageView
         android:layout_width="200dp"
         android:layout_height="100dp"
@@ -35,79 +35,84 @@
         android:fontFamily="@font/insanibc_1"
         android:textColor="@color/white"
         />
+
     <EditText
         android:id="@+id/et_reg_nombre_usuario"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:hint="@string/nombre_usuario"
-        android:background="@drawable/round_edit_text"
-        android:textColorHint="@color/dark_blue"
-        android:textSize="14sp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginVertical="18dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="@string/nombre_usuario"
         android:textColor="@color/dark_blue"
-        />
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <EditText
         android:id="@+id/et_reg_email"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:hint="@string/email"
-        android:background="@drawable/round_edit_text"
-        android:textColorHint="@color/dark_blue"
-        android:textSize="14sp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="@string/email"
         android:textColor="@color/dark_blue"
-        />
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <EditText
         android:id="@+id/et_reg_password"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:hint="@string/password"
-        android:background="@drawable/round_edit_text"
-        android:textColorHint="@color/dark_blue"
-        android:textSize="14sp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="@string/password"
         android:textColor="@color/dark_blue"
-        />
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <EditText
         android:id="@+id/et_reg_repeat_password"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:hint="@string/repeat_password"
-        android:background="@drawable/round_edit_text"
-        android:textColorHint="@color/dark_blue"
-        android:textSize="14sp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="@string/repeat_password"
         android:textColor="@color/dark_blue"
-        />
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/et_reg_location"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:hint="@string/location"
-        android:background="@drawable/round_edit_text"
-        android:textColorHint="@color/dark_blue"
-        android:textSize="14sp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="@string/location"
         android:textColor="@color/dark_blue"
-        />
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <EditText
         android:id="@+id/et_reg_profession"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:hint="@string/profession"
-        android:background="@drawable/round_edit_text"
-        android:textColorHint="@color/dark_blue"
-        android:textSize="14sp"
         android:layout_marginHorizontal="60dp"
         android:layout_marginBottom="15dp"
+        android:background="@drawable/round_edit_text"
+        android:hint="@string/profession"
         android:textColor="@color/dark_blue"
-        />
+        android:textColorHint="@color/dark_blue"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -128,14 +133,15 @@
             android:layout_marginRight="10dp"
             />
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_continuar"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginRight="40dp"
-            android:background="@color/dark_blue"
-            android:drawableEnd="@drawable/boton_next"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:background="@drawable/boton_next"
+
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <TextView
