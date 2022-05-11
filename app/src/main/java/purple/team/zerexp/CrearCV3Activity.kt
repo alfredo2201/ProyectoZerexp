@@ -4,18 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_crear_cv1.*
-import kotlinx.android.synthetic.main.activity_crear_cv2.*
+import kotlinx.android.synthetic.main.activity_crear_cv3.*
 
-class CrearCV2Activity : AppCompatActivity() {
+class CrearCV3Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crear_cv2)
-
-        btn_continuar_cv2.setOnClickListener {
-            var intent = Intent(this, CrearCV3Activity::class.java)
+        setContentView(R.layout.activity_crear_cv3)
+        btn_continuar_cv3.setOnClickListener {
+            var intent = Intent(this, CrearCV4Activity::class.java)
             startActivity(intent)
         }
-        btn_regresar_cv2.setOnClickListener {
+        btn_regresar_cv3.setOnClickListener {
             onBackPressed()
         }
     }
