@@ -12,6 +12,7 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_edit_text.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_nav_side.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/search_round.xml" value="0.3475" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/sombra_rec.xml" value="0.264" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_chat.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_company_profile.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv1.xml" value="0.29393115942028986" />
@@ -30,6 +31,7 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_empresa.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_usuario.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_registrar.xml" value="0.3625" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_side_bar_menu.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_user_profile.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/buscardor_view.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/empleo_view.xml" value="0.3625" />

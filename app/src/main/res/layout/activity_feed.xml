@@ -13,21 +13,20 @@
         android:orientation="vertical"
         android:layout_marginTop="10dp">
 
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:gravity="center_horizontal"
             android:orientation="horizontal">
             <ImageButton
-                android:id="@+id/btn_back_pf"
+                android:id="@+id/btn_regresar_feed"
                 android:layout_width="30dp"
                 android:layout_height="48dp"
-                android:layout_marginHorizontal="10dp"
+                android:layout_marginHorizontal="5dp"
                 android:layout_marginVertical="5dp"
                 android:background="@color/white"
-                android:src="@drawable/boton_regresar"/>
+                android:src="@drawable/ic_search_dark_icon"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -38,9 +37,11 @@
 
                 <EditText
                     android:id="@+id/et_buscar"
-                    android:layout_width="190dp"
+                    android:layout_width="180dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:hint="Buscador..."
+                    android:background="@android:color/transparent"
                     android:textColorHint="@color/dark_blue"
                     tools:ignore="TouchTargetSizeCheck" />
 
@@ -64,7 +65,6 @@
                 />
 
         </LinearLayout>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,19 +101,23 @@
                 android:layout_width="135dp"
                 android:layout_height="60dp"
                 android:text="Crear\nCurriculim Vitae"
-                android:textSize="9sp"
+                android:textAllCaps="false"
+                android:textSize="13sp"
                 android:background="@drawable/round_button_feed"
+                android:fontFamily="@font/segoe_ui_symbol"
                 android:textColor="@color/white"
-                android:layout_marginRight="50dp"
+                android:layout_marginRight="25dp"
                 />
             <Button
                 android:id="@+id/btn_publicar_empleo"
                 android:layout_width="135dp"
                 android:layout_height="60dp"
                 android:text="Publicar\nEmpleo"
+                android:textAllCaps="false"
                 android:background="@drawable/round_button_feed"
                 android:textColor="@color/white"
-                android:textSize="9sp"/>
+                android:fontFamily="@font/segoe_ui_symbol"
+                android:textSize="13sp"/>
         </LinearLayout>
 
         <TextView
