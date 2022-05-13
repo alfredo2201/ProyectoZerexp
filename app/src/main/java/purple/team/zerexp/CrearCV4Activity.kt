@@ -42,7 +42,7 @@ class CrearCV4Activity : AppCompatActivity() {
     var educacion:Educacion? = null
     var experienciaLaboral:ExperienciaLaboral? = null
     var habilidades = ArrayList<String>()
-    var storage = Firebase.storage
+    var storage = Firebase.storage("gs://zerexp-67034.appspot.com")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cv4)
