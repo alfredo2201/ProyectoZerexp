@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240761506016",
+    "project_id": "zerexp-67034",
+    "storage_bucket": "zerexp-67034.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240761506016:android:49a5888e96001b35096885",
+        "android_client_info": {
+          "package_name": "purple.team.zerexp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240761506016-h7va604bcu21l307b34nqio6rilt25t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYtSgK3tr3WUZU6emQ9pr19ArlN7oCywY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240761506016-h7va604bcu21l307b34nqio6rilt25t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
