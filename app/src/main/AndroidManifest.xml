@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="purple.team.zerexp">
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zerexp">
         <activity
+            android:name=".CrearCV4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CrearCV3Activity"
+            android:exported="false" />
+        <activity
             android:name=".CrearCV2Activity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".CrearCV1Activity"
             android:exported="false" />

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".CrearCV1Activity">
+    android:background="@color/white"
+    tools:context=".CrearCV4Activity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,17 +15,17 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal">
         <ImageButton
-            android:id="@+id/btn_regresar_cv1"
+            android:id="@+id/btn_regresar_cv4"
             android:layout_width="30dp"
             android:layout_height="48dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="5dp"
             android:background="@color/white"
-            android:src="@drawable/ic_search_dark_icon"/>
+            android:src="@drawable/boton_regresar"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:orientation="horizontal"
             android:layout_marginTop="6dp"
             android:background="@drawable/buscador_feed">
@@ -80,7 +81,7 @@
         android:layout_marginHorizontal="25dp"
         android:fontFamily="@font/insanibc_1"
         android:gravity="center_horizontal"
-        android:text="Paso 1"
+        android:text="Paso 4"
         android:textColor="@color/dark_blue"
         android:textSize="20sp" />
 
@@ -89,11 +90,11 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="700dp"
             android:layout_margin="30dp"
             android:background="@drawable/background_round"
             android:orientation="vertical"
-            android:padding="6dp">
+            android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -101,94 +102,47 @@
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/insanibc_1"
                 android:padding="8dp"
-                android:text="Perfil"
+                android:text= "Habilidades, conocimientos e idiomas"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="14sp" />
 
             <EditText
-                android:id="@+id/txt_nombre_cv"
+                android:id="@+id/txt_habilidad"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginVertical="5dp"
                 android:background="@drawable/round_edit_text"
-                android:hint="Nombre..."
+                android:hint="..."
                 android:minHeight="48dp"
                 android:textColor="@color/dark_blue"
                 android:textColorHint="@color/dark_blue"
                 android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/txt_apellidos_cv"
+            <ListView
+                android:id="@+id/list_habilidades"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginHorizontal="40dp"
+                android:layout_height="280dp"
                 android:layout_marginVertical="5dp"
-                android:background="@drawable/round_edit_text"
-                android:hint="Apellidos..."
-                android:minHeight="48dp"
-                android:textColor="@color/dark_blue"
-                android:textColorHint="@color/dark_blue"
-                android:textSize="14sp" />
+                android:layout_marginHorizontal="40dp"/>
 
-            <EditText
-                android:id="@+id/txt_direccion_cv"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginVertical="5dp"
-                android:background="@drawable/round_edit_text"
-                android:hint="Dirección..."
-                android:minHeight="48dp"
-                android:textColor="@color/dark_blue"
-                android:textColorHint="@color/dark_blue"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/txt_ciudad_cv"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginVertical="5dp"
-                android:background="@drawable/round_edit_text"
-                android:hint="Ciudad..."
-                android:minHeight="48dp"
-                android:textColor="@color/dark_blue"
-                android:textColorHint="@color/dark_blue"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/txt_correo_cv"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginVertical="5dp"
-                android:background="@drawable/round_edit_text"
-                android:hint="Correo electrónico..."
-                android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:textColor="@color/dark_blue"
-                android:textColorHint="@color/dark_blue"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/txt_numero_tel_cv"
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginVertical="5dp"
-                android:background="@drawable/round_edit_text"
-                android:hint="Número de teléfono..."
-                android:minHeight="48dp"
-                android:textColor="@color/dark_blue"
-                android:textColorHint="@color/dark_blue"
-                android:inputType="number"
-                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_agregar_mas"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/boton_agregar_hab"
+                android:fontFamily="@font/segoe_ui_symbol"
+                android:text="Agregar más"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="10dp"
                 android:gravity="end">
 
                 <TextView
@@ -202,16 +156,15 @@
                     android:textStyle="bold" />
 
                 <ImageButton
-                    android:id="@+id/btn_continuar_cv1"
+                    android:id="@+id/btn_continuar_cv4"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginRight="10dp"
                     android:background="@color/dark_blue"
-                    android:src="@drawable/boton_next"/>
+                    android:src="@drawable/boton_next"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
             </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>

@@ -3,16 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/boton_agregar_hab.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/buscador_feed.xml" value="0.3475" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/habilidades_edittext.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/ic_search_icon.xml" value="0.3475" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_button.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_button_feed.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_edit_text.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_nav_side.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/search_round.xml" value="0.3475" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/sombra_rec.xml" value="0.264" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_chat.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_company_profile.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv1.xml" value="0.29393115942028986" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv2.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv2.xml" value="0.33" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv3.xml" value="0.3625" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_crear_cv4.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_empleos.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_empresas_destacadas.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_favoritos.xml" value="0.29393115942028986" />
@@ -25,6 +31,7 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_empresa.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_reg_usuario.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_registrar.xml" value="0.3625" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_side_bar_menu.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_user_profile.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/buscardor_view.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/empleo_view.xml" value="0.3625" />
@@ -33,6 +40,7 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/fragment_mensajes.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/fragment_usuarios.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/message_view.xml" value="0.3625" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/nueva_habilidad.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/perfil_view.xml" value="0.3625" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable-anydpi/ic_action_name_white.xml" value="0.12" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1385" />

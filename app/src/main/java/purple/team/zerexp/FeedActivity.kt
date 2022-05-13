@@ -15,7 +15,7 @@ class FeedActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btn_back_pf.setOnClickListener {
+        btn_regresar_feed.setOnClickListener {
             onBackPressed()
         }
     }
