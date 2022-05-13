@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             override fun onFinish() {
                 var intent = Intent(applicationContext,LoginActivity::class.java).apply {}
                 startActivity(intent)
-
             }
 
         }.start()
