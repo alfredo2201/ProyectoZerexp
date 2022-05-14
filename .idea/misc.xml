@@ -65,7 +65,7 @@
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_feed.xml" value="0.264" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_login.xml" value="0.4" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_mensajes.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_mensajes.xml" value="0.264" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_messages.xml" value="0.264" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_nuevas_vacantes.xml" value="0.4" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_preguntas_frecuentes.xml" value="0.1" />
@@ -80,8 +80,10 @@
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/fragment_mensajes.xml" value="0.2" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/fragment_slideshow.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/fragment_usuarios.xml" value="0.1381340579710145" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/message_view.xml" value="0.264" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/nav_header_side_bar_menu.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/nav_side_menu.xml" value="0.1" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/nueva_habilidad.xml" value="0.1" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/side_menu.xml" value="0.19947916666666668" />
       </map>

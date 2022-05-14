@@ -18,5 +18,10 @@ class FeedActivity : AppCompatActivity() {
         btn_regresar_feed.setOnClickListener {
             onBackPressed()
         }
+
+        btn_publicar_empleo.setOnClickListener {
+            val intent = Intent(this, MessagesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
