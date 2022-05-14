@@ -131,8 +131,11 @@ class CrearCV4Activity : AppCompatActivity() {
 
     private fun subirCurriculum(){
         val storageRef = storage.reference
-        var file = Uri.fromFile(File("emulated/0/Curriculum.pdf"))
-        val curriculumRef = storageRef.child("${file.lastPathSegment}")
+        var file = Uri.fromFile(File(Environment.getExternalStorageDirectory(),"Curriculum.pdf"))
+        println("----")
+        println(file)
+        println("----")
+        val curriculumRef = storageRef.child("curiculums/Curriculum.pdf")
         var uploadTask = curriculumRef.putFile(file)
 
         val urlTask = uploadTask.continueWithTask { task ->
@@ -189,11 +192,13 @@ class CrearCV4Activity : AppCompatActivity() {
                 file.createNewFile();
             }
             pdfDocument.writeTo(FileOutputStream(file))
+            println(file.path)
             Toast.makeText(this,"Se creo el curriculum",Toast.LENGTH_SHORT).show()
         }catch (e : Exception){
             e.printStackTrace()
         }
         pdfDocument.close()
+        subirCurriculum()
     }
 
 
