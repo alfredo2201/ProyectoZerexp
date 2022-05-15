@@ -19,7 +19,7 @@
         android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INICAR SESIÓN"
+        android:text="INICIAR SESIÓN"
         android:textSize="23dp"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
@@ -119,6 +119,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/tv_olvidasteContra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -20,6 +21,8 @@ class LoginActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
+        val btn_contra: TextView = findViewById(R.id.tv_olvidasteContra)
+
 
         btn_registrase.setOnClickListener {
             var intent = Intent(this,registrarActivity::class.java)
@@ -33,6 +36,11 @@ class LoginActivity : AppCompatActivity() {
 
         btn_continuar.setOnClickListener {
             valida_ingreso()
+        }
+
+        btn_contra.setOnClickListener{
+            val intent: Intent = Intent ( this, ContrasenaActivity::class.java)
+            startActivity(intent)
         }
 
     }
