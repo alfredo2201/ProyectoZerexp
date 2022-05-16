@@ -8,6 +8,9 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_contrasena.*
+import kotlinx.android.synthetic.main.activity_reg_empresa.*
+import kotlinx.android.synthetic.main.activity_reg_empresa.btn_regresar
 
 class ContrasenaActivity : AppCompatActivity() {
 
@@ -20,7 +23,9 @@ class ContrasenaActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         val btn_restablecer: Button = findViewById(R.id.btn_restablecer)
-
+        btn_regresar.setOnClickListener {
+            onBackPressed()
+        }
         btn_restablecer.setOnClickListener {
             val et_correo: EditText = findViewById(R.id.et_contra_Restablecer)
 

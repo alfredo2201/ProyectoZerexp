@@ -39,11 +39,11 @@
                 android:textColor="@color/dark_blue"
                 />
 
-            <com.google.android.material.navigation.NavigationView
-                android:id="@+id/navigation_view"
-                android:layout_width="58dp"
+            <ImageButton
+                android:id="@+id/img_barra"
+                android:layout_width="48dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
                 android:background="@drawable/ic_baseline_menu_24"
                 android:backgroundTint="@color/dark_blue"
                 />

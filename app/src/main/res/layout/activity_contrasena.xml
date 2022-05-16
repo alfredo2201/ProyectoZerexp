@@ -9,6 +9,16 @@
     android:background="@color/dark_blue"
     tools:context=".ContrasenaActivity">
 
+    <ImageButton
+        android:id="@+id/btn_regresar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@mipmap/boton_regresar"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
     <ImageView
         android:layout_width="200dp"
         android:layout_height="100dp"
@@ -21,7 +31,7 @@
         android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RESTABLECER CONTRASEÑA"
+        android:text="RESTABLECER\nCONTRASEÑA"
         android:textSize="23dp"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
@@ -40,20 +50,22 @@
             android:id="@+id/et_contra_Restablecer"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginHorizontal="60dp"
+            android:layout_marginHorizontal="50dp"
             android:background="@drawable/round_edit_text"
             android:hint="@string/email"
             android:textColor="@color/dark_blue"
             android:textColorHint="@color/dark_blue"
+            android:inputType="textEmailAddress"
             android:textSize="14sp" />
 
         <Button
             android:id="@+id/btn_restablecer"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="50dp"
             android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
             android:background="@drawable/round_button"
             android:fontFamily="@font/segoe_ui_symbol"
             android:text="Enviar"

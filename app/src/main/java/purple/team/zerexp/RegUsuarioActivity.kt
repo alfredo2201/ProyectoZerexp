@@ -81,7 +81,6 @@ class RegUsuarioActivity : AppCompatActivity() {
     }
 
 
-
     private fun guardarUsuario(nombre: String, email: String, password: String,location: String, profession: String){
         val user = hashMapOf(
             "Nombre de Usuario" to nombre,
@@ -97,25 +96,17 @@ class RegUsuarioActivity : AppCompatActivity() {
         }.addOnFailureListener {
             Toast.makeText(baseContext, "User not Created", Toast.LENGTH_SHORT).show()
         }
-
-
-
-
     }
-
 
     private fun registrarFirebase(email: String, password: String){
 
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-
                     val user = auth.currentUser
-
                     Toast.makeText(baseContext, "Authentication Passed.",
                         Toast.LENGTH_SHORT).show()
                 } else {
-
                     Toast.makeText(baseContext, "Authentication failed.",
                         Toast.LENGTH_SHORT).show()
                 }

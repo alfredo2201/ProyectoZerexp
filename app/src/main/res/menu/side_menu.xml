@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Perfil"
-        android:icon="@drawable/usuario"/>
+    <item android:id="@+id/opt_perfil"
+        android:title="Perfil"
+        android:icon="@drawable/ic_usuario"/>
 
-    <item android:title="Mensajes"
+    <item android:id="@+id/opt_mensajes"
+        android:title="Mensajes"
         android:icon="@drawable/icono_mensaje_blanco"
         />
-    <item android:title="Buscar empleos"
+    <item android:id="@+id/opt_empleos"
+        android:title="Empleos"
         android:icon="@drawable/ic_baseline_work_24"
         />
-    <item android:title="Nuevas vacantes"
+    <item android:id="@+id/opt_vacantes"
+        android:title="Nuevas vacantes"
         android:icon="@drawable/icono_nuevavac_blanco"/>
 
-    <item android:title="Empresas destacadas"
+    <item android:id="@+id/opt_emp_destacadas"
+        android:title="Empresas destacadas"
         android:icon="@drawable/icono_empdest_blanco"/>
 
-    <item android:title="Guardados / Favoritos"
+    <item android:id="@+id/opt_fav"
+        android:title="Favoritos"
         android:icon="@drawable/icono_fav_blanco"
         />
-    <item android:title="Preguntas frecuentes"
+    <item android:id="@+id/opt_preguntas"
+        android:title="Preguntas frecuentes"
         android:icon="@drawable/icono_preg_blanco"
         />
-    <item android:title="Cerrar sesion"
+    <item android:id="@+id/opt_cerrar_sesion"
+        android:title="Cerrar sesion"
         android:icon="@drawable/icono_cerrar_blanco"
         />
 

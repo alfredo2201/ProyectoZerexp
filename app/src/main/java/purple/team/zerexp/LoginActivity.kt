@@ -18,7 +18,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
+        actionBar?.hide()
         auth = Firebase.auth
 
         val btn_contra: TextView = findViewById(R.id.tv_olvidasteContra)

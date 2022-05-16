@@ -10,5 +10,6 @@
     <color name="celeste_transparent">#dff2fb</color>
     <color name="blue">#29ABE2</color>
     <color name="dark_blue">#1E2874</color>
+    <color name="gray">#F4F3F3</color>
 
 </resources>

@@ -15,7 +15,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
-        android:background="@drawable/boton_regresar"
+        android:background="@mipmap/boton_regresar"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     <ImageView
         android:layout_width="200dp"
@@ -60,6 +60,7 @@
         android:textColor="@color/dark_blue"
         android:textColorHint="@color/dark_blue"
         android:textSize="14sp"
+        android:inputType="textEmailAddress"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -73,6 +74,7 @@
         android:textColor="@color/dark_blue"
         android:textColorHint="@color/dark_blue"
         android:textSize="14sp"
+        android:inputType="textPassword"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -86,6 +88,7 @@
         android:textColor="@color/dark_blue"
         android:textColorHint="@color/dark_blue"
         android:textSize="14sp"
+        android:inputType="textPassword"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -139,7 +142,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="40dp"
-            android:background="@drawable/boton_next"
+            android:background="@mipmap/boton_next"
 
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </LinearLayout>

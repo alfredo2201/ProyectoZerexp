@@ -3,6 +3,8 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
+import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_feed.*
 
 class FeedActivity : AppCompatActivity() {
@@ -22,6 +24,9 @@ class FeedActivity : AppCompatActivity() {
         btn_publicar_empleo.setOnClickListener {
             val intent = Intent(this, MessagesActivity::class.java)
             startActivity(intent)
+        }
+        img_barra.setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.END)
         }
     }
 }

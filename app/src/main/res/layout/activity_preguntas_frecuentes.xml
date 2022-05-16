@@ -32,8 +32,8 @@
             android:layout_gravity="center"/>
 
 
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigation_view"
+        <ImageButton
+            android:id="@+id/img_barra_pf"
             android:layout_width="48dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="110dp"
