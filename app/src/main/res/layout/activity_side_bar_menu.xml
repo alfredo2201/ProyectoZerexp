@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/dwl_side_bar"
     android:fitsSystemWindows="true">
-
+    <!--
     <androidx.fragment.app.FragmentContainerView
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:id="@+id/nav_host_fragment_side"
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph_side" />
-
+    -->
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view_menu"

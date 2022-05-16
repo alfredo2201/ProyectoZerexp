@@ -122,6 +122,7 @@
                 android:contentDescription="TODO"/>
 
             <TextView
+                android:id="@+id/tv_username_profile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="5dp"
@@ -266,14 +267,14 @@
             android:id="@+id/btn_enviar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|center_vertical"
-            android:textColor="@color/white"
-            android:fontFamily="@font/segoe_ui_symbol"
-            android:textStyle="bold"
             android:layout_alignParentEnd="true"
+            android:layout_gravity="end|center_vertical"
             android:layout_weight="1"
-            android:text="Enviar"
             android:background="@drawable/round_button_feed"
-            android:drawableEnd="@drawable/boton_next"/>
+            android:drawableEnd="@drawable/boton_next"
+            android:fontFamily="@font/segoe_ui_symbol"
+            android:text="Enviar"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
     </RelativeLayout>
 </LinearLayout>
