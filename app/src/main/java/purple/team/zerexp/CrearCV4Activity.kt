@@ -135,7 +135,7 @@ class CrearCV4Activity : AppCompatActivity() {
         println("----")
         println(file)
         println("----")
-        val curriculumRef = storageRef.child("curiculums/Curriculum.pdf")
+        val curriculumRef = storageRef.child("Curriculum.pdf")
         var uploadTask = curriculumRef.putFile(file)
 
         val urlTask = uploadTask.continueWithTask { task ->

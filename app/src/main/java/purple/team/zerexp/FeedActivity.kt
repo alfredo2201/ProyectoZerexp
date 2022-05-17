@@ -22,10 +22,8 @@ class FeedActivity : AppCompatActivity() {
         }
 
         img_barra.setOnClickListener {
-            drawerLayout.openDrawer(GravityCompat.START)
-
+           drawerLayout.openDrawer(GravityCompat.START)
         }
-
 
         var navView = nav_view
         var navController = Navigation.findNavController(this,R.id.navHostFragment)
