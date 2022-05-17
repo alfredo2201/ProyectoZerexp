@@ -5,6 +5,7 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:background="@color/white"
     android:orientation="vertical"
     android:layoutDirection="rtl"
@@ -88,6 +89,7 @@
         android:background="@drawable/round_nav_side"
         app:itemTextColor="@color/white"
         android:layout_gravity="start"
+        android:layoutDirection="ltr"
         app:itemIconTint="@color/white"
         >
 
