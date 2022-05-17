@@ -48,6 +48,18 @@
                 android:layout_gravity="center_horizontal">
 
                 <Button
+                    android:id="@+id/btn_publicar_empleo"
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:text="Publicar\nEmpleo"
+                    android:textAllCaps="false"
+                    android:background="@drawable/round_button_feed"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/segoe_ui_symbol"
+                    android:layout_marginRight="25dp"
+                    android:textSize="13sp"/>
+
+                <Button
                     android:id="@+id/btn_crear_curriculum"
                     android:layout_width="135dp"
                     android:layout_height="60dp"
@@ -57,18 +69,8 @@
                     android:background="@drawable/round_button_feed"
                     android:fontFamily="@font/segoe_ui_symbol"
                     android:textColor="@color/white"
-                    android:layout_marginRight="25dp"
                     />
-                <Button
-                    android:id="@+id/btn_publicar_empleo"
-                    android:layout_width="135dp"
-                    android:layout_height="60dp"
-                    android:text="Publicar\nEmpleo"
-                    android:textAllCaps="false"
-                    android:background="@drawable/round_button_feed"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/segoe_ui_symbol"
-                    android:textSize="13sp"/>
+
             </LinearLayout>
 
             <TextView
@@ -96,6 +98,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
                     android:layout_width="match_parent"
+                    android:layoutDirection="ltr"
                     android:layout_height="130dp">
                 </GridView>
             </LinearLayout>
@@ -130,6 +133,7 @@
                 android:orientation="vertical"
                 android:background="@color/celeste_transparent"
                 android:layout_marginTop="20dp"
+                android:layoutDirection="ltr"
                 android:layout_marginBottom="30dp">
                 <HorizontalScrollView
                     android:id="@+id/lista_nuevos_usuarios"

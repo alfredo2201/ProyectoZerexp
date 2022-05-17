@@ -19,22 +19,29 @@
             android:paddingVertical="10dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
-            <ImageButton
-                android:id="@+id/btn_regresar_feed"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginVertical="5dp"
-                android:layout_gravity="center_vertical"
-                android:background="@mipmap/boton_regresar"
-                tools:ignore="SpeakableTextPresentCheck" />
 
+            <ImageButton
+                android:id="@+id/img_barra"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_baseline_menu_24"
+                android:backgroundTint="@color/dark_blue"
+                />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="6dp"
                 android:background="@drawable/buscador_feed">
+
+                <ImageButton
+                    android:id="@+id/btn_buscar"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_search_dark_icon"
+                    android:background="@android:color/transparent"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <EditText
                     android:id="@+id/et_buscar"
@@ -47,25 +54,16 @@
                     android:textColor="@color/dark_blue"
                     tools:ignore="TouchTargetSizeCheck" />
 
-                <ImageButton
-                    android:id="@+id/btn_buscar"
-                    android:layout_width="44dp"
-                    android:layout_height="44dp"
-                    android:src="@drawable/ic_search_dark_icon"
-                    android:background="@android:color/transparent"
-                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
-
-
             <ImageButton
-                android:id="@+id/img_barra"
-                android:layout_width="48dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:background="@drawable/ic_baseline_menu_24"
-                android:backgroundTint="@color/dark_blue"
-                />
-
+                android:id="@+id/btn_regresar_feed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/boton_regresar"
+                tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
     </LinearLayout>
 
