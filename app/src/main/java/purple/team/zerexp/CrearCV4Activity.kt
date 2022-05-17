@@ -11,7 +11,6 @@ import android.graphics.Paint
 import android.graphics.Typeface
 import android.graphics.pdf.PdfDocument
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.text.TextPaint
@@ -20,6 +19,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.firebase.ktx.Firebase
@@ -30,7 +30,9 @@ import purple.team.zerexp.modelos.Educacion
 import purple.team.zerexp.modelos.ExperienciaLaboral
 import purple.team.zerexp.modelos.Perfil
 import java.io.File
+import java.io.FileInputStream
 import java.io.FileOutputStream
+import java.io.InputStream
 
 class CrearCV4Activity : AppCompatActivity() {
 
@@ -50,6 +52,7 @@ class CrearCV4Activity : AppCompatActivity() {
             perfil = bundle.getSerializable("perfil") as Perfil
             educacion = bundle.getSerializable("educacion") as Educacion
             experienciaLaboral = bundle.getSerializable("experiencia") as ExperienciaLaboral
+
         }
         if (checkPermission()){
             Toast.makeText(this,"Permiso Aceptado",Toast.LENGTH_SHORT)
@@ -129,11 +132,12 @@ class CrearCV4Activity : AppCompatActivity() {
 
     private fun subirCurriculum(){
         val storageRef = storage.reference
-        var file = Uri.fromFile(File(Environment.getExternalStorageDirectory(),"Curriculum.pdf"))
+        var pdf = File("Curriculum.pdf")
         println("----")
-        println(file)
+        println(pdf)
         println("----")
-        val curriculumRef = storageRef.child("Curriculum.pdf")
+        var file = Uri.fromFile(pdf)
+        val curriculumRef = storageRef.child("/curriculums/"+System.currentTimeMillis()+".pdf")
         var uploadTask = curriculumRef.putFile(file)
 
         val urlTask = uploadTask.continueWithTask { task ->
@@ -183,15 +187,16 @@ class CrearCV4Activity : AppCompatActivity() {
             y+=15
         }
         pdfDocument.finishPage(pagina1)
-
-        val file = File(Environment.getExternalStorageDirectory(),"Curriculum.pdf")
+        val path: File = Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_PICTURES)
+        val file = File(path,"Curriculum.pdf")
         try {
             if(!file.exists()){ // Si no existe, crea el archivo.
                 file.createNewFile();
+                pdfDocument.writeTo(FileOutputStream(file))
+                println(file.path)
+                Toast.makeText(this,"Se creo el curriculum",Toast.LENGTH_SHORT).show()
             }
-            pdfDocument.writeTo(FileOutputStream(file))
-            println(file.path)
-            Toast.makeText(this,"Se creo el curriculum",Toast.LENGTH_SHORT).show()
         }catch (e : Exception){
             e.printStackTrace()
         }

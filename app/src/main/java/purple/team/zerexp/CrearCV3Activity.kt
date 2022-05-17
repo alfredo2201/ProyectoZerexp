@@ -11,6 +11,7 @@ import purple.team.zerexp.modelos.Perfil
 class CrearCV3Activity : AppCompatActivity() {
     var perfil: Perfil? = null
     var educacion: Educacion? = null
+    var exp: ExperienciaLaboral?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cv3)
@@ -25,6 +26,7 @@ class CrearCV3Activity : AppCompatActivity() {
                 var intent = Intent(this, CrearCV4Activity::class.java)
                 intent.putExtra("perfil",perfil)
                 intent.putExtra("educacion",educacion)
+                intent.putExtra("experiencia",exp)
                 startActivity(intent)
             }
             var titulo = txt_tituloEmpleo_cv.text.toString()
@@ -79,7 +81,7 @@ class CrearCV3Activity : AppCompatActivity() {
             **/
             var fechaInicio = mesInicio +"/"+anioInicio
             var fechaFin = mesInicio +"/"+anioInicio
-            var exp = ExperienciaLaboral(titulo,empresa,ciudad,periodo, fechaInicio,fechaFin)
+            exp = ExperienciaLaboral(titulo,empresa,ciudad,periodo, fechaInicio,fechaFin)
             var intent = Intent(this, CrearCV4Activity::class.java)
             intent.putExtra("perfil",perfil)
             intent.putExtra("educacion",educacion)
