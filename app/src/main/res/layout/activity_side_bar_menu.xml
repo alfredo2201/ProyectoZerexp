@@ -13,6 +13,8 @@
         android:layout_height="match_parent"
         app:menu="@menu/side_menu"
         android:background="@drawable/round_nav_side"
+        android:padding="25dp"
+        android:layout_gravity="end"
         app:itemTextColor="@color/white"
         app:itemIconTint="@color/white">
 

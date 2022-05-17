@@ -22,8 +22,7 @@ class FeedActivity : AppCompatActivity() {
         }
 
         img_barra.setOnClickListener {
-            drawerLayout.openDrawer(GravityCompat.START)
-
+            // drawerLayout.openDrawer(GravityCompat.END)
         }
 
 
