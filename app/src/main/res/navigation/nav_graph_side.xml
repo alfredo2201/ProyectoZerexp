@@ -8,11 +8,7 @@
         android:id="@+id/feed_main"
         android:name="purple.team.zerexp.FeedFragment"
         android:label="fragment_feed"
-        tools:layout="@layout/fragment_feed" >
-        <action
-            android:id="@+id/opt_mensajes"
-            app:destination="@id/mobile_navigation" />
-    </fragment>
+        tools:layout="@layout/fragment_feed" />
     <fragment
         android:id="@+id/opt_vacantes"
         android:name="purple.team.zerexp.VacantesFragment"
@@ -23,5 +19,9 @@
         android:name="purple.team.zerexp.FavoritosFragment"
         android:label="fragment_favoritos"
         tools:layout="@layout/fragment_favoritos" />
-    <include app:graph="@navigation/mobile_navigation" />
+    <fragment
+        android:id="@+id/opt_mensajes"
+        android:name="purple.team.zerexp.MensagesFragment"
+        android:label="fragment_mensages"
+        tools:layout="@layout/fragment_mensages" />
 </navigation>

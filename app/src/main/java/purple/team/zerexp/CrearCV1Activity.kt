@@ -3,10 +3,8 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_crear_cv1.*
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_login.btn_continuar
+import purple.team.zerexp.modelos.Perfil
 
 class CrearCV1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +43,7 @@ class CrearCV1Activity : AppCompatActivity() {
             }
 **/
             var intent = Intent(this, CrearCV2Activity::class.java)
-            var perfil:Perfil = Perfil(nombre_emp,apellidos_emp,direccion_emp,ciudad_emp,correo_emp,numeroTel_emp)
+            var perfil: Perfil = Perfil(nombre_emp,apellidos_emp,direccion_emp,ciudad_emp,correo_emp,numeroTel_emp)
             println("Perfil creado")
             println(perfil)
             intent.putExtra("perfil",perfil)

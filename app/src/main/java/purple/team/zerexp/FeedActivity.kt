@@ -11,6 +11,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.ItemTouchHelper.RIGHT
 import kotlinx.android.synthetic.main.activity_feed.*
+import kotlinx.android.synthetic.main.fragment_feed.*
 
 class FeedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +25,7 @@ class FeedActivity : AppCompatActivity() {
         img_barra.setOnClickListener {
            drawerLayout.openDrawer(GravityCompat.START)
         }
+
 
         var navView = nav_view
         var navController = Navigation.findNavController(this,R.id.navHostFragment)

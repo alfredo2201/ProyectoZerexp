@@ -5,7 +5,6 @@ import android.Manifest.permission.WRITE_EXTERNAL_STORAGE
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.content.pm.PackageManager.*
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Paint
@@ -19,28 +18,27 @@ import android.text.TextPaint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import android.widget.BaseAdapter
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
-import kotlinx.android.synthetic.main.activity_crear_cv3.*
 import kotlinx.android.synthetic.main.activity_crear_cv4.*
 import kotlinx.android.synthetic.main.nueva_habilidad.view.*
+import purple.team.zerexp.modelos.Educacion
+import purple.team.zerexp.modelos.ExperienciaLaboral
+import purple.team.zerexp.modelos.Perfil
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileOutputStream
 
 class CrearCV4Activity : AppCompatActivity() {
 
     var tituloText = "Curriculum vitae"
     var descripcionText = ""
-    var perfil:Perfil? = null
-    var educacion:Educacion? = null
-    var experienciaLaboral:ExperienciaLaboral? = null
+    var perfil: Perfil? = null
+    var educacion: Educacion? = null
+    var experienciaLaboral: ExperienciaLaboral? = null
     var habilidades = ArrayList<String>()
     var storage = Firebase.storage("gs://zerexp-67034.appspot.com")
     override fun onCreate(savedInstanceState: Bundle?) {

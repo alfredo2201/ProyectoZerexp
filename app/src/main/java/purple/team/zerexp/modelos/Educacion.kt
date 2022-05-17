@@ -1,4 +1,4 @@
-package purple.team.zerexp
+package purple.team.zerexp.modelos
 
 import java.io.Serializable
 import java.util.*

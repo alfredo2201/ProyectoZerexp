@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MessagesActivity">
 
     <LinearLayout
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <ImageButton
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/boton_regresar"
@@ -63,7 +64,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginHorizontal="20dp"
             android:layout_width="360dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="650dp"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/nav_view"

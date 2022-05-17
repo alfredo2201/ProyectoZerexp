@@ -3,14 +3,14 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_crear_cv1.*
-import kotlinx.android.synthetic.main.activity_crear_cv2.*
 import kotlinx.android.synthetic.main.activity_crear_cv3.*
+import purple.team.zerexp.modelos.Educacion
+import purple.team.zerexp.modelos.ExperienciaLaboral
+import purple.team.zerexp.modelos.Perfil
 
 class CrearCV3Activity : AppCompatActivity() {
-    var perfil:Perfil? = null
-    var educacion:Educacion? = null
+    var perfil: Perfil? = null
+    var educacion: Educacion? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cv3)

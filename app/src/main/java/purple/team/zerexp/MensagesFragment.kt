@@ -1,16 +1,16 @@
 package purple.team.zerexp
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.GravityCompat
-import kotlinx.android.synthetic.main.activity_feed.*
-import kotlinx.android.synthetic.main.fragment_feed.*
-import kotlinx.android.synthetic.main.fragment_feed.view.*
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.fragment_mensages.*
+import purple.team.zerexp.adaptadores.ChatAdapter
+import purple.team.zerexp.modelos.Chat
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,40 +19,49 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [FeedFragment.newInstance] factory method to
+ * Use the [MensagesFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FeedFragment : Fragment() {
+class MensagesFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-    var contexto: Context? = null
-
+    private var adaptador: ChatAdapter? = null
+    val db = Firebase.firestore
+    val auth = Firebase.auth
+    lateinit var email: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-
         }
 
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val vista = inflater.inflate(R.layout.fragment_feed, container, false)
-        vista.btn_crear_curriculum.setOnClickListener {
-            var intent = Intent(activity,CrearCV1Activity::class.java)
-            startActivity(intent)
+        val vista = inflater.inflate(R.layout.fragment_mensages, container, false)
+
+        email = if (auth.currentUser?.email != null) auth.currentUser?.email!! else ""
+        val userRef = db.collection("users").document(email)
+
+        userRef.collection("chats").get().addOnSuccessListener { chatsDB ->
+            val chats = chatsDB.toObjects(Chat::class.java) as ArrayList<Chat>
+            adaptador = ChatAdapter(vista.context, chats)
+            lv_chats.adapter = adaptador
         }
-
-
-        vista.btn_publicar_empleo.setOnClickListener {
-            val intent = Intent(activity, MessagesActivity::class.java)
-            startActivity(intent)
+        userRef.collection("chats").addSnapshotListener { chatsDB, error ->
+            if (error == null) {
+                chatsDB?.let {
+                    val chats = chatsDB.toObjects(Chat::class.java) as ArrayList<Chat>
+                    adaptador = ChatAdapter(vista.context, chats)
+                    lv_chats.adapter = adaptador
+                }
+            }
         }
-
         return vista
     }
 
@@ -63,12 +72,12 @@ class FeedFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment FeedFragment.
+         * @return A new instance of fragment MensagesFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            FeedFragment().apply {
+            MensagesFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

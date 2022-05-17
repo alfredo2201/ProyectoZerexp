@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".MensagesFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensajes"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="50dp"
+            android:fontFamily="@font/insanibc_1"
+            android:textColor="@color/dark_blue"
+            android:layout_gravity="center"/>
+
+        <ListView
+            android:id="@+id/lv_chats"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:layout_height="650dp"/>
+
+    </LinearLayout>
+</FrameLayout>
