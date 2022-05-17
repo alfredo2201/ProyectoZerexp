@@ -17,6 +17,7 @@
         android:supportsRtl="true"
         android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.Zerexp">
+        android:theme="@style/Theme.Zerexp.NoActionBar">
         <activity
             android:name=".ContrasenaActivity"
             android:exported="false" />
@@ -52,7 +53,7 @@
             android:name=".empleos"
             android:exported="false" />
         <activity
-            android:name=".mensajes"
+            android:name=".Mensajes"
             android:exported="false"
             android:label="@string/title_activity_mensajes" />
         <activity
