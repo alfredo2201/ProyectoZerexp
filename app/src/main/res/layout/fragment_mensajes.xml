@@ -58,10 +58,10 @@
     </LinearLayout>
     <Button
         android:id="@+id/btn_add"
-        android:layout_width="48dp"
+        android:layout_width="98dp"
         android:layout_height="48dp"
         android:layout_gravity="center|bottom"
-        android:text="m" />
+        android:text="Boton" />
 
 
 

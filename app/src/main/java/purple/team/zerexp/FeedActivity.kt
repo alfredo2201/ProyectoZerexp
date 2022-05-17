@@ -1,10 +1,15 @@
 package purple.team.zerexp
 
 import android.content.Intent
+import android.icu.lang.UCharacter.IndicPositionalCategory.RIGHT
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
+import android.view.Gravity.RIGHT
 import androidx.core.view.GravityCompat
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
+import androidx.recyclerview.widget.ItemTouchHelper.RIGHT
 import kotlinx.android.synthetic.main.activity_feed.*
 
 class FeedActivity : AppCompatActivity() {
@@ -12,21 +17,19 @@ class FeedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feed)
 
-        btn_crear_curriculum.setOnClickListener {
-            var intent = Intent(this,CrearCV1Activity::class.java)
-            startActivity(intent)
-        }
-
         btn_regresar_feed.setOnClickListener {
             onBackPressed()
         }
 
-        btn_publicar_empleo.setOnClickListener {
-            val intent = Intent(this, MessagesActivity::class.java)
-            startActivity(intent)
-        }
         img_barra.setOnClickListener {
-            drawerLayout.openDrawer(GravityCompat.END)
+            drawerLayout.openDrawer(GravityCompat.START)
+
         }
+
+
+        var navView = nav_view
+        var navController = Navigation.findNavController(this,R.id.navHostFragment)
+        NavigationUI.setupWithNavController(navView,navController)
+
     }
 }

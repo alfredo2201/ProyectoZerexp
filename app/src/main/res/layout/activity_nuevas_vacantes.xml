@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="15dp"
+    android:background="@color/white"
     tools:context=".nuevas_vacantes">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
 
         <ImageButton
@@ -18,19 +19,19 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="5dp"
+            android:layout_marginRight="20dp"
             android:background="@mipmap/boton_regresar"
             tools:ignore="SpeakableTextPresentCheck" />
 
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="Nuevas Vacantes"
             android:textSize="20sp"
-            android:layout_marginLeft="50dp"
             android:gravity="center"
+            android:layout_marginHorizontal="50dp"
             android:fontFamily="@font/insanibc_1"
             android:textColor="@color/dark_blue"
             android:layout_gravity="center"/>
@@ -40,7 +41,6 @@
             android:id="@+id/img_barra_nv"
             android:layout_width="48dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="70dp"
             android:background="@drawable/ic_baseline_menu_24"
             android:backgroundTint="@color/dark_blue"
             />
@@ -50,28 +50,34 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/search_round">
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/buscador_feed">
 
         <EditText
-            android:id="@+id/et_buscar"
-            android:layout_width="300dp"
+            android:id="@+id/et_buscar_fav"
+            android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:hint="Buscar..."
+            android:layout_gravity="center"
+            android:hint="Buscador..."
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/dark_blue"
+            android:textColor="@color/dark_blue"
             tools:ignore="TouchTargetSizeCheck" />
 
         <ImageButton
-            android:id="@+id/btn_buscar"
+            android:id="@+id/btn_buscar_fav"
             android:layout_width="44dp"
             android:layout_height="44dp"
-            android:src="@drawable/ic_search_icon"
-            android:background="@color/light_gray"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search_dark_icon"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </LinearLayout>
+
+
 
     <ListView
         android:layout_width="match_parent"
@@ -80,12 +86,12 @@
         />
 
     <ImageButton
-        android:id="@+id/btn_add"
+        android:id="@+id/btn_add_vacante"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:src="@drawable/ic_add_icon"
-        android:background="@color/white"
+        android:background="@drawable/round_button_feed"
         />
 
 

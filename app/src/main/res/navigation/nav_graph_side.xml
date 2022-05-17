@@ -3,36 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph_side.xml"
-    app:startDestination="@id/userProfile">
-
-    <activity
-        android:id="@+id/userProfile"
-        android:name="purple.team.zerexp.UserProfile"
-        android:label="activity_user_profile"
-        tools:layout="@layout/activity_user_profile" />
-    <activity
-        android:id="@+id/empleos"
-        android:name="purple.team.zerexp.empleos"
-        android:label="activity_empleos"
-        tools:layout="@layout/activity_empleos" />
-    <activity
-        android:id="@+id/nuevas_vacantes"
-        android:name="purple.team.zerexp.nuevas_vacantes"
-        android:label="activity_nuevas_vacantes"
-        tools:layout="@layout/activity_nuevas_vacantes" />
-    <activity
-        android:id="@+id/empresas_destacadas"
-        android:name="purple.team.zerexp.empresas_destacadas"
-        android:label="activity_empresas_destacadas"
-        tools:layout="@layout/activity_empresas_destacadas" />
-    <activity
-        android:id="@+id/favoritos"
-        android:name="purple.team.zerexp.favoritos"
-        android:label="activity_favoritos"
-        tools:layout="@layout/activity_favoritos" />
-    <activity
-        android:id="@+id/preguntas_Frecuentes"
-        android:name="purple.team.zerexp.Preguntas_Frecuentes"
-        android:label="activity_preguntas_frecuentes"
-        tools:layout="@layout/activity_preguntas_frecuentes" />
+    app:startDestination="@id/feed_main">
+    <fragment
+        android:id="@+id/feed_main"
+        android:name="purple.team.zerexp.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/opt_mensajes"
+            app:destination="@id/mobile_navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/opt_vacantes"
+        android:name="purple.team.zerexp.VacantesFragment"
+        android:label="fragment_vacantes"
+        tools:layout="@layout/fragment_vacantes" />
+    <fragment
+        android:id="@+id/opt_fav"
+        android:name="purple.team.zerexp.FavoritosFragment"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" />
+    <include app:graph="@navigation/mobile_navigation" />
 </navigation>

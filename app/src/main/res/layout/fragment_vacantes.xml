@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VacantesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevas Vacantes"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="50dp"
+            android:fontFamily="@font/insanibc_1"
+            android:textColor="@color/dark_blue"
+            android:layout_gravity="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_add_vacante"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_add_icon"
+        android:background="@drawable/round_button_feed"
+        />
+    </LinearLayout>
+</FrameLayout>

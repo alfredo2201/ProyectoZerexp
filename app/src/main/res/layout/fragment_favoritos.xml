@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoritosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favoritos"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginHorizontal="70dp"
+            android:fontFamily="@font/insanibc_1"
+            android:textColor="@color/dark_blue"
+            android:layout_marginVertical="15dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <ListView
+                android:id="@+id/list_favoritos"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+            </ListView>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_add_fav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button_feed"
+            android:src="@drawable/ic_add_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+</FrameLayout>
