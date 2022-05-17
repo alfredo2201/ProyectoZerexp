@@ -98,6 +98,7 @@
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/side_menu.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_contrasena.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_empleos.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_empresas_destacadas.xml" value="0.19746376811594202" />
         <entry key="app/src/main/res/layout/activity_favoritos.xml" value="0.19630192502532928" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.6278942871093751" />
@@ -106,9 +107,16 @@
         <entry key="app/src/main/res/layout/activity_reg_empresa.xml" value="0.29347826086956524" />
         <entry key="app/src/main/res/layout/activity_reg_usuario.xml" value="0.29347826086956524" />
         <entry key="app/src/main/res/layout/activity_registrar.xml" value="0.29583333333333334" />
+        <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.30310598294181784" />
         <entry key="app/src/main/res/layout/fragment_empresas.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/fragment_favoritos.xml" value="0.2246376811594203" />
+        <entry key="app/src/main/res/layout/fragment_feed.xml" value="0.2246376811594203" />
+        <entry key="app/src/main/res/layout/fragment_mensages.xml" value="0.2246376811594203" />
         <entry key="app/src/main/res/layout/fragment_mensajes.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/fragment_usuarios.xml" value="0.22735507246376813" />
+        <entry key="app/src/main/res/layout/message_view.xml" value="0.2246376811594203" />
+        <entry key="app/src/main/res/layout/nueva_habilidad.xml" value="0.2246376811594203" />
+        <entry key="app/src/main/res/layout/perfil_view.xml" value="0.2246376811594203" />
       </map>
     </option>
   </component>
