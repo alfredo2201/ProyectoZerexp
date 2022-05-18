@@ -3,6 +3,7 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_crear_cv2.*
 import purple.team.zerexp.modelos.Educacion
 import purple.team.zerexp.modelos.Perfil
@@ -27,7 +28,7 @@ class CrearCV2Activity : AppCompatActivity() {
             var anioInicio = txt_anio_inicio_cv.text.toString()
             var mesFin = txt_mes_fin_cv.text.toString()
             var anioFin = txt_anio_fin_cv.text.toString()
-/**
+
             if (grado.isNullOrBlank()){
                 Toast.makeText(this,"El campo de texto Grado Académico esta vacío. Vuelva a intentarlo.",
                     Toast.LENGTH_SHORT).show()
@@ -61,7 +62,6 @@ class CrearCV2Activity : AppCompatActivity() {
                 Toast.makeText(this,"El campo de texto Año de fin esta vacío. Vuelva a intentarlo.",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            **/
             var fechaInicio = mesInicio +"/"+anioInicio
             var fechaFin = mesInicio +"/"+anioInicio
             var educacion = Educacion(grado,area,institucion,ciudad,fechaInicio,fechaFin)

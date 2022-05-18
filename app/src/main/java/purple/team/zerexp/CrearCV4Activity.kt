@@ -22,7 +22,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.ktx.storage
 import kotlinx.android.synthetic.main.activity_crear_cv4.*
 import kotlinx.android.synthetic.main.nueva_habilidad.view.*
@@ -33,6 +36,7 @@ import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.InputStream
+import java.util.jar.Manifest
 
 class CrearCV4Activity : AppCompatActivity() {
 
@@ -42,11 +46,14 @@ class CrearCV4Activity : AppCompatActivity() {
     var educacion: Educacion? = null
     var experienciaLaboral: ExperienciaLaboral? = null
     var habilidades = ArrayList<String>()
+    private lateinit var auth: FirebaseAuth
     var storage = Firebase.storage("gs://zerexp-67034.appspot.com")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cv4)
         habilidades = arrayListOf()
+        auth = Firebase.auth
         var bundle = intent.extras
         if (bundle != null){
             perfil = bundle.getSerializable("perfil") as Perfil
@@ -76,6 +83,8 @@ class CrearCV4Activity : AppCompatActivity() {
         btn_regresar_cv4.setOnClickListener {
             onBackPressed()
         }
+
+
         btn_continuar_cv4.setOnClickListener(View.OnClickListener {
             if (experienciaLaboral!!.titulo.isNullOrBlank() ||experienciaLaboral!!.titulo == " " ) {
                 descripcionText = " --Perfil-- \nNombre completo: " + (perfil?.nombre
@@ -130,14 +139,17 @@ class CrearCV4Activity : AppCompatActivity() {
         })
     }
 
+
+
+
+
     private fun subirCurriculum(){
-        val storageRef = storage.reference
-        var pdf = File("Curriculum.pdf")
-        println("----")
-        println(pdf)
-        println("----")
+        var storageRef = storage.reference
+        var path :File = Environment.getExternalStoragePublicDirectory(
+            Environment.DIRECTORY_PICTURES)
+        var pdf = File(path,"Curriculum.pdf")
         var file = Uri.fromFile(pdf)
-        val curriculumRef = storageRef.child("/curriculums/"+System.currentTimeMillis()+".pdf")
+        val curriculumRef = storageRef.child("/curriculums/"+auth.currentUser!!.email+".pdf")
         var uploadTask = curriculumRef.putFile(file)
 
         val urlTask = uploadTask.continueWithTask { task ->
@@ -193,10 +205,9 @@ class CrearCV4Activity : AppCompatActivity() {
         try {
             if(!file.exists()){ // Si no existe, crea el archivo.
                 file.createNewFile();
-                pdfDocument.writeTo(FileOutputStream(file))
-                println(file.path)
-                Toast.makeText(this,"Se creo el curriculum",Toast.LENGTH_SHORT).show()
             }
+            pdfDocument.writeTo(FileOutputStream(file))
+            Toast.makeText(this,"Se creo el curriculum",Toast.LENGTH_SHORT).show()
         }catch (e : Exception){
             e.printStackTrace()
         }
@@ -262,7 +273,6 @@ class CrearCV4Activity : AppCompatActivity() {
             var vista = inflador.inflate(R.layout.nueva_habilidad,null)
 
             vista.txt_habilidad_nueva.text = hab
-            //Toast.makeText(contexto,texto.text,Toast.LENGTH_SHORT).show()
             return vista
         }
 

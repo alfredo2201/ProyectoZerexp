@@ -3,6 +3,7 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_crear_cv3.*
 import purple.team.zerexp.modelos.Educacion
 import purple.team.zerexp.modelos.ExperienciaLaboral
@@ -37,7 +38,7 @@ class CrearCV3Activity : AppCompatActivity() {
             var anioInicio = txt_anio_inicio_cv3.text.toString()
             var mesFin = txt_mes_fin_cv3.text.toString()
             var anioFin = txt_anio_fin_cv3.text.toString()
-            /**
+
             if (titulo.isNullOrBlank()){
                 Toast.makeText(this,"El campo de texto Titulo del empleo esta vacío. Vuelva a intentarlo.",
                     Toast.LENGTH_SHORT).show()
@@ -78,7 +79,7 @@ class CrearCV3Activity : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            **/
+
             var fechaInicio = mesInicio +"/"+anioInicio
             var fechaFin = mesInicio +"/"+anioInicio
             exp = ExperienciaLaboral(titulo,empresa,ciudad,periodo, fechaInicio,fechaFin)

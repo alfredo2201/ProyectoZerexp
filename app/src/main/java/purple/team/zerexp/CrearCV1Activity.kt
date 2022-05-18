@@ -3,6 +3,7 @@ package purple.team.zerexp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_crear_cv1.*
 import purple.team.zerexp.modelos.Perfil
 
@@ -17,7 +18,7 @@ class CrearCV1Activity : AppCompatActivity() {
             var ciudad_emp = txt_ciudad_cv.text.toString()
             var correo_emp = txt_correo_cv.text.toString()
             var numeroTel_emp = txt_numero_tel_cv.text.toString()
-          /**  if (nombre_emp.isNullOrBlank()){
+          if (nombre_emp.isNullOrBlank()){
                 Toast.makeText(this,"El campo de texto Nombre esta vacío. Vuelva a intentarlo.",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
@@ -41,7 +42,7 @@ class CrearCV1Activity : AppCompatActivity() {
                 Toast.makeText(this,"El campo de texto Numero de Telefono esta vacío. Vuelva a intentarlo.",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-**/
+
             var intent = Intent(this, CrearCV2Activity::class.java)
             var perfil: Perfil = Perfil(nombre_emp,apellidos_emp,direccion_emp,ciudad_emp,correo_emp,numeroTel_emp)
             println("Perfil creado")
