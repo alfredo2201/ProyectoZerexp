@@ -81,7 +81,7 @@
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_preguntas_frecuentes.xml" value="0.1" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_reg_empresa.xml" value="0.2572463768115942" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_reg_usuario.xml" value="0.4" />
-        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_side_bar_menu.xml" value="0.31640625" />
+        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_side_bar_menu.xml" value="0.4" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/activity_user_profile.xml" value="0.264" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/app_bar_side_bar_menu.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/content_side_bar_menu.xml" value="0.16485507246376813" />
@@ -94,12 +94,11 @@
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/nav_header_side_bar_menu.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/nav_side_menu.xml" value="0.1" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/nueva_habilidad.xml" value="0.1" />
-        <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/perfil_view.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/layout/priv_message_view.xml" value="0.4" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/danie/StudioProjects/ProyectoZerexp/app/src/main/res/menu/side_menu.xml" value="0.19947916666666668" />
         <entry key="app/src/main/res/layout/activity_contrasena.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/activity_empleos.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_empleos.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_empresas_destacadas.xml" value="0.19746376811594202" />
         <entry key="app/src/main/res/layout/activity_favoritos.xml" value="0.19630192502532928" />
         <entry key="app/src/main/res/layout/activity_feed.xml" value="0.21795181537230085" />
@@ -110,7 +109,7 @@
         <entry key="app/src/main/res/layout/activity_reg_usuario.xml" value="0.29347826086956524" />
         <entry key="app/src/main/res/layout/activity_registrar.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.30310598294181784" />
-        <entry key="app/src/main/res/layout/empleo_view.xml" value="0.2561872890051134" />
+        <entry key="app/src/main/res/layout/empleo_view.xml" value="0.33" />
         <entry key="app/src/main/res/layout/empresa_view.xml" value="0.35795273089964463" />
         <entry key="app/src/main/res/layout/fragment_empresas.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/fragment_favoritos.xml" value="0.2246376811594203" />

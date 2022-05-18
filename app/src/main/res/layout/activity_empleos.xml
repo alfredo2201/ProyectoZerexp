@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     android:layout_marginTop="15dp"
     tools:context=".empleos">
 
@@ -13,32 +14,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/background_shadow"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_back_pf"
-            android:layout_width="48dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="IC" />
-
+        <ImageButton
+            android:id="@+id/btn_regresar_empleos"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/boton_regresar"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Empleos"
-            android:textSize="16sp"
-            android:layout_marginLeft="100dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="90dp"
             android:gravity="center"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/insanibc_1"
             android:layout_gravity="center"/>
 
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigation_view"
+        <ImageButton
+            android:id="@+id/img_barra_cv1"
             android:layout_width="48dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="130dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="100dp"
             android:background="@drawable/ic_baseline_menu_24"
+            android:backgroundTint="@color/dark_blue"
             />
 
 
@@ -46,44 +55,51 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp">
+        android:layoutDirection="rtl"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buscador_feed">
 
-        <EditText
-            android:id="@+id/et_buscar"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:hint="Buscar..."
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <Button
+        <ImageButton
             android:id="@+id/btn_buscar"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:text="IC"
+            android:src="@drawable/ic_search_dark_icon"
+            android:background="@android:color/transparent"
             tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/et_buscar"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Buscador..."
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/dark_blue"
+            android:textColor="@color/dark_blue"
+            tools:ignore="TouchTargetSizeCheck" />
+
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/dark_blue"
             android:text="BÚSQUEDAS SUGERIDAS"
             android:gravity="center"/>
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
             <GridView
                 android:id="@+id/gv_sugeridas"
                 android:layout_width="match_parent"
@@ -91,8 +107,6 @@
                 android:horizontalSpacing="6dp"
                 android:numColumns="3"
                 android:verticalSpacing="6dp" />
-
-
         </ScrollView>
 
 
@@ -105,21 +119,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="20dp">
-
-
-            <ListView
-                android:id="@+id/lv_empleos"
-                android:layout_width="match_parent"
-                android:layout_height="430dp"/>
-
-
+        <ListView
+            android:id="@+id/lv_empleos"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="430dp"/>
     </LinearLayout>
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_add"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_gravity="center"
-        android:text="IC" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button_feed"
+        android:src="@drawable/ic_add_icon"
+        />
 
 </LinearLayout>

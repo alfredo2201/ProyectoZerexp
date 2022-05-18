@@ -66,7 +66,7 @@ class RegUsuarioActivity : AppCompatActivity() {
             if (pass1 == pass2) {
 
                 registrarFirebase(email,pass1)
-                guardarUsuario(nombre,email,pass1,location,profession)
+                guardarUsuario(nombre,email,location,profession)
                 var intent = Intent(this,FeedActivity::class.java)
                 startActivity(intent)
 
@@ -82,11 +82,10 @@ class RegUsuarioActivity : AppCompatActivity() {
     }
 
 
-    private fun guardarUsuario(nombre: String, email: String, password: String,location: String, profession: String){
+    private fun guardarUsuario(nombre: String, email: String,location: String, profession: String){
         val user = hashMapOf(
             "Nombre de Usuario" to nombre,
             "Correo Electronico" to email,
-            "Contrasena" to password,
             "Ubicacion" to location,
             "Profesion" to profession,
         )

@@ -65,7 +65,7 @@ class RegEmpresaActivity : AppCompatActivity() {
             if (pass1 == pass2) {
 
                 registrarFirebase(email,pass1)
-                guardarEmpresa(nombre,email,pass1,location,giro)
+                guardarEmpresa(nombre,email,location,giro)
                 var intent = Intent(this,FeedActivity::class.java)
                 startActivity(intent)
 
@@ -81,11 +81,10 @@ class RegEmpresaActivity : AppCompatActivity() {
     }
 
 
-    private fun guardarEmpresa(nombre: String, email: String, password: String,location: String, giro: String){
+    private fun guardarEmpresa(nombre: String, email: String,location: String, giro: String){
         val empresa = hashMapOf(
             "Nombre de Empresa" to nombre,
             "Correo Electronico" to email,
-            "Contrasena" to password,
             "Ubicacion" to location,
             "Giro" to giro,
         )

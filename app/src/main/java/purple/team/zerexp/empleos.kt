@@ -22,7 +22,7 @@ class empleos : AppCompatActivity() {
 
         empleos = cargarDatos()
 
-        val btn_agregar: Button = findViewById(R.id.btn_add)
+        val btn_agregar: ImageButton = findViewById(R.id.btn_add)
 
         val dialog = AlertDialog.Builder(this).create()
 
@@ -41,8 +41,6 @@ class empleos : AppCompatActivity() {
 
         dialog.setView(inflater.inflate(R.layout.publicar_empleo, null))
 
-        dialog.setTitle("Publicar Empleo")
-
         dialog.setButton(AlertDialog.BUTTON_POSITIVE, "SEND") { dialogs, which ->
 
             var nombre = dialog.findViewById(R.id.nombre) as TextView
@@ -57,12 +55,15 @@ class empleos : AppCompatActivity() {
             var salario = dialog.findViewById(R.id.salario) as TextView
             var pay = salario.getText().toString()
 
+
+
             if (!name.isNullOrBlank() && !company.isNullOrBlank() && !location.isNullOrBlank() && !pay.isNullOrBlank() ){
                 val job = hashMapOf(
                     "Nombre" to name,
                     "Empresa" to company,
                     "Ubicacion" to location,
-                    "Salario" to pay
+                    "Salario" to pay,
+                    "Vacante Status" to true
                 )
 
 
@@ -72,11 +73,12 @@ class empleos : AppCompatActivity() {
                     }.addOnFailureListener {
                         Toast.makeText(baseContext, "Job not Created", Toast.LENGTH_SHORT).show()
                     }
+
                 dialog.dismiss()
 
                 cargarDatos()
 
-                empleos.add(Empleo(name,company,location,pay))
+                empleos.add(Empleo(name,company,location,pay,true))
 
                 empleos = orderDatos()
 
@@ -130,11 +132,7 @@ class empleos : AppCompatActivity() {
         db.collection("empleos")
             .get()
             .addOnSuccessListener { result ->
-                for (document in result) {
-                    empleos.add(Empleo(document.get("Nombre").toString(),document.get("Empresa").toString(),document.get("Ubicacion").toString(),document.get("Salario").toString()))
-                }
-
-
+                empleos = result.toObjects(Empleo::class.java) as ArrayList<Empleo>
             }
 
         return empleos
