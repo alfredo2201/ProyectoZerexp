@@ -27,8 +27,10 @@ class CrearCV3Activity : AppCompatActivity() {
                 var intent = Intent(this, CrearCV4Activity::class.java)
                 intent.putExtra("perfil",perfil)
                 intent.putExtra("educacion",educacion)
+                exp = ExperienciaLaboral("null","null","null","null","null","null")
                 intent.putExtra("experiencia",exp)
                 startActivity(intent)
+                return@setOnClickListener
             }
             var titulo = txt_tituloEmpleo_cv.text.toString()
             var empresa = txt_empresa_cv.text.toString()
