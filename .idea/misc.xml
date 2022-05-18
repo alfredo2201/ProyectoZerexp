@@ -17,6 +17,7 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/rotate_progress_bar.xml" value="0.3575" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_button_feed.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_edit_text.xml" value="0.3475" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_et_mensajes.xml" value="0.3575" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/round_nav_side.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/search_round.xml" value="0.3475" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/drawable/side_nav_bar.xml" value="0.3635" />
@@ -33,7 +34,7 @@
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_feed.xml" value="0.25" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_login.xml" value="0.3625" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_mensajes.xml" value="0.29393115942028986" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_mensajes.xml" value="0.22" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_messages.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_nuevas_vacantes.xml" value="0.29393115942028986" />
         <entry key="..\:/Users/crist/AndroidStudioProjects/Zerexp/app/src/main/res/layout/activity_preguntas_frecuentes.xml" value="0.2975630611372381" />

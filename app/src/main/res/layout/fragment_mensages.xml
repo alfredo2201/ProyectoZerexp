@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layoutDirection="rtl"
+    android:layoutDirection="ltr"
     tools:context=".MensagesFragment">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,17 +17,16 @@
             android:textSize="20sp"
             android:gravity="center"
             android:layout_marginVertical="15dp"
-            android:layout_marginHorizontal="50dp"
+            android:layout_marginHorizontal="40dp"
             android:fontFamily="@font/insanibc_1"
             android:textColor="@color/dark_blue"
             android:layout_gravity="center"/>
 
         <ListView
             android:id="@+id/lv_chats"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_marginHorizontal="40dp"
+            android:layout_marginHorizontal="30dp"
             android:layout_height="650dp"/>
-
     </LinearLayout>
 </FrameLayout>
