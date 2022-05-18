@@ -6,14 +6,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.Gravity.RIGHT
+import android.view.MenuItem
 import androidx.core.view.GravityCompat
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.ItemTouchHelper.RIGHT
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_feed.*
 import kotlinx.android.synthetic.main.fragment_feed.*
 
 class FeedActivity : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feed)
@@ -23,13 +28,13 @@ class FeedActivity : AppCompatActivity() {
         }
 
         img_barra.setOnClickListener {
-           drawerLayout.openDrawer(GravityCompat.START)
+            drawerLayout.openDrawer(GravityCompat.START)
         }
 
 
         var navView = nav_view
-        var navController = Navigation.findNavController(this,R.id.navHostFragment)
-        NavigationUI.setupWithNavController(navView,navController)
+        var navController = Navigation.findNavController(this, R.id.navHostFragment)
+        NavigationUI.setupWithNavController(navView, navController)
 
     }
 }

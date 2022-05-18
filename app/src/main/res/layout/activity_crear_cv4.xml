@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         android:gravity="center_horizontal"
+        android:background="@drawable/background_shadow"
         android:orientation="horizontal">
 
         <ImageButton
@@ -81,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="25dp"
-        android:fontFamily="@font/insanibc_1"
+        android:fontFamily="@font/insanibu"
         android:gravity="center_horizontal"
         android:text="Paso 4"
         android:textColor="@color/dark_blue"
@@ -102,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/insanibc_1"
+                android:fontFamily="@font/insanibu"
                 android:padding="8dp"
                 android:text= "Habilidades, conocimientos e idiomas"
                 android:textColor="@color/white"
@@ -131,7 +132,7 @@
             <Button
                 android:id="@+id/btn_agregar_mas"
                 android:layout_width="130dp"
-                android:layout_height="48dp"
+                android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/boton_agregar_hab"
@@ -140,11 +141,33 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="13dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No deseo agregar habilidades"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="@color/greyish_white"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_vertical"/>
+                <CheckBox
+                    android:id="@+id/cb_sin_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/greyish_white"
+                    android:layout_gravity="center"
+                    android:textColor="@color/greyish_white"
+                    />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
                 android:gravity="end">
 

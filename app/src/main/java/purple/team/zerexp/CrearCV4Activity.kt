@@ -86,7 +86,7 @@ class CrearCV4Activity : AppCompatActivity() {
 
 
         btn_continuar_cv4.setOnClickListener(View.OnClickListener {
-            if (experienciaLaboral!!.titulo.isNullOrBlank() ||experienciaLaboral!!.titulo == " " ) {
+            if (experienciaLaboral!!.titulo != "null") {
                 descripcionText = " --Perfil-- \nNombre completo: " + (perfil?.nombre
                     ?: "None") + " " + (perfil?.apellidos ?: "") + "\n" +
                         "Dirección: " + (perfil?.direccion ?: "") + "\n" +
@@ -146,7 +146,7 @@ class CrearCV4Activity : AppCompatActivity() {
     private fun subirCurriculum(){
         var storageRef = storage.reference
         var path :File = Environment.getExternalStoragePublicDirectory(
-            Environment.DIRECTORY_PICTURES)
+            Environment.DIRECTORY_DOCUMENTS)
         var pdf = File(path,"Curriculum.pdf")
         var file = Uri.fromFile(pdf)
         val curriculumRef = storageRef.child("/curriculums/"+auth.currentUser!!.email+".pdf")
@@ -166,6 +166,12 @@ class CrearCV4Activity : AppCompatActivity() {
                 // Handle failures
                 // ...
             }
+        }
+        val localFile = File.createTempFile("curriculum", "pdf")
+        curriculumRef.getFile(localFile).addOnSuccessListener {
+            Toast.makeText(this,"Archivo descargado en la carpeta Documents",Toast.LENGTH_SHORT).show()
+        }.addOnFailureListener{
+            Toast.makeText(this,"Fallo la descarga",Toast.LENGTH_SHORT).show()
         }
 
     }
@@ -200,7 +206,7 @@ class CrearCV4Activity : AppCompatActivity() {
         }
         pdfDocument.finishPage(pagina1)
         val path: File = Environment.getExternalStoragePublicDirectory(
-            Environment.DIRECTORY_PICTURES)
+            Environment.DIRECTORY_DOCUMENTS)
         val file = File(path,"Curriculum.pdf")
         try {
             if(!file.exists()){ // Si no existe, crea el archivo.
