@@ -1,28 +1,21 @@
 package purple.team.zerexp
 
-import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
+import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_mensajes.*
-import kotlinx.android.synthetic.main.activity_messages.*
 import kotlinx.android.synthetic.main.fragment_mensajes.*
-import purple.team.zerexp.adaptadores.ChatAdapter
 import purple.team.zerexp.adaptadores.MessageAdapter
 import purple.team.zerexp.databinding.ActivityMensajesBinding
-import purple.team.zerexp.modelos.Chat
 import purple.team.zerexp.modelos.Message
 
-class Mensajes : AppCompatActivity() {
+class Mensajes : FragmentActivity() {
 
     private lateinit var binding: ActivityMensajesBinding
 
@@ -48,15 +41,15 @@ class Mensajes : AppCompatActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        // setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
+        /*
         email = if (auth.currentUser?.email != null) auth.currentUser?.email!! else ""
 
-        if (intent != null) {
+        if (intent.extras != null) {
             chatId = intent.getStringExtra("chatId").toString()
         }
-
+        Log.d("[ CHAT ID ]", chatId)
         // val userRef = db.collection("users").document(email)
         val chatRef = db.collection("chats").document(chatId)
 
@@ -78,7 +71,7 @@ class Mensajes : AppCompatActivity() {
         nav_host_fragment_activity_mensajes.btn_enviar_priv.setOnClickListener {
             enviarMensaje()
         }
-
+        */
     }
 
     fun enviarMensaje() {

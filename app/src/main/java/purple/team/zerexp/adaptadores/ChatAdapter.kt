@@ -42,7 +42,7 @@ class ChatAdapter: BaseAdapter {
         var inflator = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var view = inflator.inflate(R.layout.message_view, null)
         view.tv_username.setText(chat.name)
-        view.tv_last_message.setText("Holiwis uwu")
+        view.tv_last_message.setText(chat.id)
         view.tv_last_message_time.setText("13:07")
         view.ll_chat_info_layout.setOnClickListener {
             var intent = Intent(context, Mensajes::class.java)
@@ -51,6 +51,4 @@ class ChatAdapter: BaseAdapter {
         }
         return view
     }
-
-
 }
