@@ -2,26 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp">
+    android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/ic_baseline_business_24"
-        android:backgroundTint="@color/dark_blue"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        >
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
         <TextView
+            android:id="@+id/nom_empleo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre\ndespcripcion"/>
+            android:text="Nombre"/>
+        <TextView
+            android:id="@+id/emp_empleo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empresa"/>
+        <TextView
+            android:id="@+id/ubica_empleo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciudad,pais"/>
+        <TextView
+            android:id="@+id/salar_empleo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"/>
 
 
         <LinearLayout
@@ -33,9 +43,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_favorite_24"
+                android:background="@drawable/ic_baseline_favorite_border_24"
                 android:layout_gravity="right"
-                android:layout_marginLeft="200dp"
+                android:layout_marginLeft="250dp"
                 android:layout_marginRight="10dp"
                 android:backgroundTint="@color/dark_blue"/>
 
@@ -44,15 +54,12 @@
                 android:layout_width="68dp"
                 android:layout_height="30dp"
                 android:text="Mensaje"
-                android:textColor="@color/white"
                 android:textSize="7sp"
+                android:textColor="@color/white"
                 android:backgroundTint="@color/dark_blue"/>
 
         </LinearLayout>
 
-
     </LinearLayout>
-
-
 
 </LinearLayout>
