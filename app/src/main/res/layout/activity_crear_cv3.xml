@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         android:gravity="center_horizontal"
+        android:background="@drawable/background_shadow"
         android:orientation="horizontal">
         <ImageButton
             android:id="@+id/btn_regresar_cv3"

@@ -63,7 +63,7 @@ class CrearCV2Activity : AppCompatActivity() {
                 return@setOnClickListener
             }
             var fechaInicio = mesInicio +"/"+anioInicio
-            var fechaFin = mesInicio +"/"+anioInicio
+            var fechaFin = mesFin +"/"+anioFin
             var educacion = Educacion(grado,area,institucion,ciudad,fechaInicio,fechaFin)
             var intent = Intent(this, CrearCV3Activity::class.java)
             intent.putExtra("perfil",result)
