@@ -54,6 +54,7 @@ class HomeFragment : Fragment() {
         if (activity?.intent?.extras != null) {
             chatId = activity?.intent?.getStringExtra("chatId").toString()
         }
+        println("[ EMAIL ] = ${email}")
         Log.d("[ CHAT ID ]", chatId)
         // val userRef = db.collection("users").document(email)
         val chatRef = db.collection("chats").document(chatId.trim())
@@ -85,14 +86,16 @@ class HomeFragment : Fragment() {
     }
 
     private fun enviarMensaje(root: View) {
-        println("Si entra")
         val email: String = if (auth.currentUser?.email != null) auth.currentUser?.email!! else ""
-        val message = Message(
-            message = root.et_message_priv.text.toString(),
-            from = email
-        )
-        db.collection("chats").document(chatId.trim()).collection("messages").document().set(message)
-        root.et_message_priv.setText("")
+        if (email.isNotEmpty() && email.isNotBlank()) {
+            println("[ EMAIL ] = ${email}")
+            val message = Message(
+                message = root.et_message_priv.text.toString(),
+                from = email
+            )
+            db.collection("chats").document(chatId.trim()).collection("messages").document().set(message)
+            root.et_message_priv.setText("")
+        }
     }
 
     override fun onDestroyView() {

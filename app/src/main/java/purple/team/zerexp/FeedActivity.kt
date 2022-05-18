@@ -18,13 +18,15 @@ import kotlinx.android.synthetic.main.activity_feed.*
 import kotlinx.android.synthetic.main.fragment_feed.*
 
 class FeedActivity : AppCompatActivity() {
-    private lateinit var auth: FirebaseAuth
+    private var auth = Firebase.auth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feed)
 
         btn_regresar_feed.setOnClickListener {
+            auth.signOut()
             onBackPressed()
+            finish()
         }
 
         img_barra.setOnClickListener {
@@ -37,4 +39,5 @@ class FeedActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(navView, navController)
 
     }
+
 }

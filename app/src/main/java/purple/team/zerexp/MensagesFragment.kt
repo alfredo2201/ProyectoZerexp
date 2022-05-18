@@ -46,19 +46,21 @@ class MensagesFragment : Fragment() {
         val vista = inflater.inflate(R.layout.fragment_mensages, container, false)
 
         email = if (auth.currentUser?.email != null) auth.currentUser?.email!! else ""
-        val userRef = db.collection("users").document(email)
+        if (email.isNotEmpty() && email.isNotBlank()) {
+            val userRef = db.collection("users").document(email)
 
-        userRef.collection("chats").get().addOnSuccessListener { chatsDB ->
-            val chats = chatsDB.toObjects(Chat::class.java) as ArrayList<Chat>
-            adaptador = ChatAdapter(vista.context, chats)
-            lv_chats.adapter = adaptador
-        }
-        userRef.collection("chats").addSnapshotListener { chatsDB, error ->
-            if (error == null) {
-                chatsDB?.let {
-                    val chats = chatsDB.toObjects(Chat::class.java) as ArrayList<Chat>
-                    adaptador = ChatAdapter(vista.context, chats)
-                    lv_chats.adapter = adaptador
+            userRef.collection("chats").get().addOnSuccessListener { chatsDB ->
+                val chats = chatsDB.toObjects(Chat::class.java) as ArrayList<Chat>
+                adaptador = ChatAdapter(vista.context, chats)
+                lv_chats.adapter = adaptador
+            }
+            userRef.collection("chats").addSnapshotListener { chatsDB, error ->
+                if (error == null) {
+                    chatsDB?.let {
+                        val chats = chatsDB.toObjects(Chat::class.java) as ArrayList<Chat>
+                        adaptador = ChatAdapter(vista.context, chats)
+                        lv_chats.adapter = adaptador
+                    }
                 }
             }
         }

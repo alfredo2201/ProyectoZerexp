@@ -49,7 +49,7 @@ class FeedFragment : Fragment() {
 
 
         vista.btn_publicar_empleo.setOnClickListener {
-            val intent = Intent(activity, MessagesActivity::class.java)
+            val intent = Intent(activity, empleos::class.java)
             startActivity(intent)
         }
 
