@@ -83,7 +83,7 @@ class CrearCV3Activity : AppCompatActivity() {
             }
 
             var fechaInicio = mesInicio +"/"+anioInicio
-            var fechaFin = mesInicio +"/"+anioInicio
+            var fechaFin = mesFin +"/"+anioFin
             exp = ExperienciaLaboral(titulo,empresa,ciudad,periodo, fechaInicio,fechaFin)
             var intent = Intent(this, CrearCV4Activity::class.java)
             intent.putExtra("perfil",perfil)
