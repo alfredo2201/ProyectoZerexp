@@ -4,12 +4,17 @@ import android.app.AlertDialog
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_empleos.*
 
 class empleos : AppCompatActivity() {
 
@@ -19,28 +24,13 @@ class empleos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_empleos)
-
-        empleos = cargarDatos()
-
+        lv_empleos.divider = null
+        cargarDatos()
         val btn_agregar: ImageButton = findViewById(R.id.btn_add)
-
         val dialog = AlertDialog.Builder(this).create()
-
         val inflater = layoutInflater
-
-        var listview: ListView = findViewById(R.id.lv_empleos) as ListView
-        listview.divider = null
-
-        var adaptador: AdaptadorEmpleos? = null
-
-
-        adaptador = AdaptadorEmpleos ( this, empleos)
-
-
-        listview.adapter = adaptador
-
+        
         dialog.setView(inflater.inflate(R.layout.publicar_empleo, null))
-
         dialog.setButton(AlertDialog.BUTTON_POSITIVE, "SEND") { dialogs, which ->
 
             var nombre = dialog.findViewById(R.id.nombre) as TextView
@@ -76,16 +66,10 @@ class empleos : AppCompatActivity() {
 
                 dialog.dismiss()
 
-                cargarDatos()
-
                 empleos.add(Empleo(name,company,location,pay,true))
 
                 empleos = orderDatos()
-
-                adaptador = AdaptadorEmpleos ( this, empleos)
-
-                listview.adapter = adaptador
-
+                cargarDatos()
                 nombre.setText("")
                 empresa.setText("")
                 ubicacion.setText("")
@@ -108,11 +92,16 @@ class empleos : AppCompatActivity() {
             salario.setText("")
         }
 
-        dialog.create()
-
         btn_agregar.setOnClickListener {
+            dialog.create()
             dialog.show()
         }
+        btn_regresar_empleos.setOnClickListener {
+            onBackPressed()
+            finish()
+        }
+
+
 
     }
 
@@ -129,10 +118,15 @@ class empleos : AppCompatActivity() {
     }
 
     fun cargarDatos(): ArrayList<Empleo>{
+        var adaptador: AdaptadorEmpleos? = null
         db.collection("empleos")
             .get()
             .addOnSuccessListener { result ->
+                println("[  RESULT  ]"+result.documents)
                 empleos = result.toObjects(Empleo::class.java) as ArrayList<Empleo>
+                adaptador = AdaptadorEmpleos ( this, empleos)
+                lv_empleos.adapter = adaptador
+                println("[   EMPLEOS  ] "+ empleos)
             }
 
         return empleos
