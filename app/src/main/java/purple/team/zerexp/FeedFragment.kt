@@ -8,9 +8,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.GravityCompat
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_feed.*
 import kotlinx.android.synthetic.main.fragment_feed.*
 import kotlinx.android.synthetic.main.fragment_feed.view.*
+import purple.team.zerexp.adaptadores.MiniProfileAdapter
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,6 +31,9 @@ class FeedFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     var contexto: Context? = null
+    val auth = Firebase.auth
+    val db = Firebase.firestore
+    lateinit var email: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +58,11 @@ class FeedFragment : Fragment() {
         vista.btn_publicar_empleo.setOnClickListener {
             val intent = Intent(activity, empleos::class.java)
             startActivity(intent)
+        }
+
+        db.collection("users").get().addOnSuccessListener { users ->
+            val adaptador = MiniProfileAdapter(vista.context, users.toList())
+            vista.lista_nu_users.adapter = adaptador
         }
 
         return vista
